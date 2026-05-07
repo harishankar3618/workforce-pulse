@@ -61,29 +61,40 @@ export default function HomePage() {
   }
 
   return (
-    <main className="min-h-screen bg-background px-4 py-6 text-foreground md:px-6 lg:px-8">
-      <section className="mx-auto flex max-w-7xl flex-col gap-6">
-        <header className="flex flex-col gap-4 rounded-[28px] border border-border/70 bg-card px-5 py-5 shadow-dashboard-panel md:px-6">
-          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-            <div className="space-y-2">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accent">Workforce Pulse</p>
-              <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">Executive operational intelligence</h1>
-              <p className="max-w-2xl text-sm leading-6 text-muted-foreground">
+    <main className="min-h-screen bg-background px-4 py-4 text-foreground sm:px-4 md:px-6 lg:px-6 xl:px-8">
+      <div className="mx-auto w-full max-w-7xl space-y-4">
+        {/* HEADER */}
+        <header className="rounded-2xl border border-border/70 bg-card p-4 shadow-dashboard-panel md:p-5 lg:p-6">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div className="space-y-1.5">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-accent sm:text-xs">
+                Workforce Pulse
+              </p>
+              <h1 className="text-2xl font-semibold tracking-tight leading-tight sm:text-3xl md:text-4xl">
+                Executive operational intelligence
+              </h1>
+              <p className="text-xs leading-5 text-muted-foreground sm:text-sm">
                 {analytics.dateRange.start} to {analytics.dateRange.end} · {analytics.quality.rowsClean} clean rows · {analytics.quality.rowsDropped} dropped rows
               </p>
             </div>
-            <ExportButton />
+            <div className="self-start sm:self-auto">
+              <ExportButton />
+            </div>
           </div>
-          <FilterBar
-            departments={analytics.filtersAvailable.departments}
-            taskCategories={analytics.filtersAvailable.taskCategories}
-            weeks={analytics.filtersAvailable.weeks}
-          />
+          <div className="mt-4">
+            <FilterBar
+              departments={analytics.filtersAvailable.departments}
+              taskCategories={analytics.filtersAvailable.taskCategories}
+              weeks={analytics.filtersAvailable.weeks}
+            />
+          </div>
         </header>
 
+        {/* ANOMALY BANNER */}
         <AnomalyBanner anomalies={filtered.anomalies} />
 
-        <section className="grid gap-4 md:grid-cols-3">
+        {/* KPI CARDS */}
+        <section className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           <KPICard
             label="Recoverable Hours / Month"
             value={`~${filteredHeadline?.recoverableHoursMonth} hrs`}
@@ -140,19 +151,23 @@ export default function HomePage() {
           />
         </section>
 
+        {/* AUTOMATION TABLE + TREND CHART */}
         <section className="grid gap-4 lg:grid-cols-[1.45fr_0.95fr]">
           <AutomationTable tasks={filtered.tasks} />
           <TrendChart weekly={filtered.weekly} />
         </section>
 
+        {/* TIME SINK CHART + EMPLOYEE TABLE */}
         <section className="grid gap-4 lg:grid-cols-[1.05fr_0.95fr]">
           <TimeSinkChart tasks={filtered.tasks} apps={filtered.apps} departments={filtered.departments} />
           <EmployeeTable employees={filtered.employees} />
         </section>
 
+        {/* DATA QUALITY REPORT */}
         <DataQualityReport quality={analytics.quality} />
-      </section>
+      </div>
 
+      {/* CHAT PANEL */}
       <ChatPanel />
     </main>
   );

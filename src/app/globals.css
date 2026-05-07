@@ -34,9 +34,64 @@
 
   html {
     color-scheme: dark;
+    overflow-x: hidden;
+    width: 100%;
   }
 
   body {
     @apply min-h-screen bg-background text-foreground antialiased;
+    padding-left: env(safe-area-inset-left, 0);
+    padding-right: env(safe-area-inset-right, 0);
+    padding-top: env(safe-area-inset-top, 0);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Safe-area padding utility */
+  .safe-area-padding {
+    padding-left: max(1rem, env(safe-area-inset-left, 0px));
+    padding-right: max(1rem, env(safe-area-inset-right, 0px));
+    padding-top: max(1rem, env(safe-area-inset-top, 0px));
+    padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Text balancing for headlines */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Container overflow protection */
+  .container-safe {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Hide scrollbar for horizontal scrolling filter chips */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Safe area aware positioning for fixed elements */
+  .safe-bottom {
+    bottom: max(1rem, env(safe-area-inset-bottom, 16px));
+  }
+
+  .safe-right {
+    right: max(1rem, env(safe-area-inset-right, 16px));
+  }
+
+  .safe-left {
+    left: max(1rem, env(safe-area-inset-left, 16px));
+  }
+
+  .safe-top {
+    top: max(1rem, env(safe-area-inset-top, 16px));
   }
 }

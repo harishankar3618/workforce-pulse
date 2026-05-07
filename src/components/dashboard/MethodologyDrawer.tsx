@@ -31,11 +31,15 @@ export function MethodologyDrawer({ open, onOpenChange, content }: MethodologyDr
         className="absolute inset-0 cursor-default"
         onClick={() => onOpenChange(false)}
       />
-      <aside className="absolute right-0 top-0 flex h-full w-full max-w-xl flex-col border-l border-white/10 bg-[#1C1C1F] p-6 text-foreground shadow-2xl">
+      <aside className="absolute right-0 top-0 flex h-full w-full max-w-xl flex-col border-l border-white/10 bg-[#1C1C1F] p-4 text-foreground shadow-2xl sm:top-auto sm:h-auto sm:max-h-[90vh] sm:rounded-2xl sm:p-6">
         <div className="flex items-start justify-between gap-4 border-b border-white/10 pb-4">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Methodology</p>
-            <h2 className="mt-2 text-2xl font-semibold">{content.title}</h2>
+          <div className="min-w-0 flex-1">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-accent sm:text-xs">
+              Methodology
+            </p>
+            <h2 className="mt-1.5 text-lg font-semibold leading-tight sm:mt-2 sm:text-2xl">
+              {content.title}
+            </h2>
           </div>
           <button
             type="button"
@@ -46,44 +50,67 @@ export function MethodologyDrawer({ open, onOpenChange, content }: MethodologyDr
           </button>
         </div>
 
-        <div className="mt-6 flex-1 space-y-6 overflow-y-auto pr-1">
+        <div className="mt-4 flex-1 space-y-4 overflow-y-auto pr-1 sm:mt-6 sm:space-y-6">
           <section>
-            <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">Formula</h3>
-            <p className="mt-2 text-sm leading-6 text-foreground/90">{content.formula}</p>
+            <h3 className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground sm:text-xs">
+              Formula
+            </h3>
+            <p className="mt-1.5 text-sm leading-5 text-foreground/90 sm:mt-2 sm:text-base sm:leading-6">
+              {content.formula}
+            </p>
           </section>
 
           <section>
-            <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">Assumptions</h3>
-            <ul className="mt-3 space-y-2 text-sm leading-6 text-foreground/90">
+            <h3 className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground sm:text-xs">
+              Assumptions
+            </h3>
+            <ul className="mt-2.5 space-y-1.5 text-sm leading-5 text-foreground/90 sm:mt-3 sm:space-y-2 sm:text-base">
               {content.assumptions.map((assumption) => (
-                <li key={assumption} className="rounded-2xl border border-white/8 bg-white/3 px-3 py-2">
+                <li
+                  key={assumption}
+                  className="rounded-xl border border-white/8 bg-white/3 px-2.5 py-2 text-xs sm:rounded-2xl sm:px-3 sm:py-2.5"
+                >
                   {assumption}
                 </li>
               ))}
             </ul>
           </section>
 
-          <section className="grid gap-3 md:grid-cols-2">
-            <div className="rounded-2xl border border-white/8 bg-white/3 p-4">
-              <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Confidence interval</p>
-              <p className="mt-2 text-lg font-semibold text-foreground">{content.confidenceInterval}</p>
+          <section className="grid grid-cols-2 gap-3 sm:gap-4">
+            <div className="rounded-xl border border-white/8 bg-white/3 p-3 sm:rounded-2xl sm:p-4">
+              <p className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground sm:text-xs">
+                Confidence interval
+              </p>
+              <p className="mt-1.5 text-base font-semibold text-foreground sm:mt-2 sm:text-lg">
+                {content.confidenceInterval}
+              </p>
             </div>
-            <div className="rounded-2xl border border-white/8 bg-white/3 p-4">
-              <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Excluded rows</p>
-              <p className="mt-2 text-lg font-semibold text-foreground">{content.excludedRows}</p>
+            <div className="rounded-xl border border-white/8 bg-white/3 p-3 sm:rounded-2xl sm:p-4">
+              <p className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground sm:text-xs">
+                Excluded rows
+              </p>
+              <p className="mt-1.5 text-base font-semibold text-foreground sm:mt-2 sm:text-lg">
+                {content.excludedRows}
+              </p>
             </div>
           </section>
 
-          <section className="rounded-2xl border border-white/8 bg-white/3 p-4">
-            <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Excluded employees</p>
-            <p className="mt-2 text-sm leading-6 text-foreground/90">
+          <section className="rounded-xl border border-white/8 bg-white/3 p-3 sm:rounded-2xl sm:p-4">
+            <p className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground sm:text-xs">
+              Excluded employees
+            </p>
+            <p className="mt-1.5 text-sm leading-5 text-foreground/90 sm:mt-2 sm:text-base">
               {content.excludedEmployees.length > 0 ? content.excludedEmployees.join(", ") : "None"}
             </p>
           </section>
 
           <section>
-            <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">Coefficient rationale</h3>
-            <p className="mt-2 text-sm leading-6 text-foreground/90">{content.rationale}</p>
+            <h3 className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground sm:text-xs">
+              Coefficient rationale
+            </h3>
+            <p className="mt-1.5 text-sm leading-5 text-foreground/90 sm:mt-2 sm:text-base sm:leading-6">
+              {content.rationale}
+            </p>
           </section>
         </div>
       </aside>

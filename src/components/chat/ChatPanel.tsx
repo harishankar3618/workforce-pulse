@@ -96,39 +96,46 @@ export function ChatPanel() {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="fixed bottom-5 right-5 z-40 inline-flex h-14 w-14 items-center justify-center rounded-full border border-accent/30 bg-accent text-[#141416] shadow-2xl transition hover:scale-[1.02]"
+        className="fixed bottom-4 right-4 z-40 inline-flex h-12 w-12 items-center justify-center rounded-full border border-accent/30 bg-accent text-[#141416] shadow-2xl transition hover:scale-[1.02] active:scale-[0.98] sm:bottom-5 sm:right-5 sm:h-14 sm:w-14 safe-bottom safe-right"
         aria-label="Open chat assistant"
       >
-        <MessageSquareText className="h-6 w-6" />
+        <MessageSquareText className="h-5 w-5 sm:h-6 sm:w-6" />
       </button>
 
       {open ? (
-        <div className="fixed inset-0 z-50 bg-black/55 backdrop-blur-[2px]">
+        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-[2px]">
           <button
             type="button"
             aria-label="Close chat assistant"
             className="absolute inset-0 cursor-default"
             onClick={() => setOpen(false)}
           />
-          <aside className="absolute right-0 top-0 flex h-full w-full max-w-[460px] flex-col border-l border-white/10 bg-[#1C1C1F] p-4 text-foreground shadow-2xl md:p-5">
-            <div className="flex items-start justify-between gap-4 border-b border-white/10 pb-4">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Grounded assistant</p>
-                <h2 className="mt-2 text-2xl font-semibold">Ask about the current filter scope</h2>
-                <p className="mt-2 text-sm text-muted-foreground">{filtersToString(activeFilters)}</p>
+          <aside className="absolute right-0 top-0 flex h-full w-full max-w-[100%] flex-col border-l border-white/10 bg-[#1C1C1F] text-foreground shadow-2xl sm:right-5 sm:top-5 sm:h-[calc(100vh-2.5rem)] sm:w-full sm:max-w-[460px] sm:rounded-2xl safe-top safe-right">
+            <div className="flex items-start justify-between gap-3 border-b border-white/10 px-4 py-3 sm:px-5 sm:py-4">
+              <div className="min-w-0 flex-1">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-accent">
+                  Grounded assistant
+                </p>
+                <h2 className="mt-1 text-lg font-semibold leading-tight sm:mt-2 sm:text-2xl">
+                  Ask about the current filter scope
+                </h2>
+                <p className="mt-1.5 truncate text-[11px] text-muted-foreground sm:mt-2 sm:text-sm">
+                  {filtersToString(activeFilters)}
+                </p>
               </div>
               <button
                 type="button"
                 onClick={() => setOpen(false)}
-                className="rounded-full border border-white/10 bg-white/5 p-2 text-muted-foreground transition hover:text-foreground"
+                className="rounded-full border border-white/10 bg-white/5 p-1.5 text-muted-foreground transition hover:text-foreground sm:p-2"
+                aria-label="Close chat"
               >
                 <X className="h-4 w-4" />
               </button>
             </div>
 
-            <div className="mt-4 flex-1 space-y-4 overflow-y-auto pr-1">
+            <div className="flex-1 space-y-3 overflow-y-auto px-4 py-3 sm:px-5 sm:py-4">
               {messages.length === 0 ? (
-                <div className="rounded-3xl border border-white/8 bg-white/3 p-4 text-sm text-muted-foreground">
+                <div className="rounded-2xl border border-white/8 bg-white/3 p-3 text-xs text-muted-foreground sm:rounded-3xl sm:p-4 sm:text-sm">
                   Try asking for the top automation priority, the main anomaly risk, or a departmental breakdown.
                 </div>
               ) : null}
@@ -137,10 +144,17 @@ export function ChatPanel() {
                 <ChatMessage key={`${message.role}-${index}`} role={message.role} content={message.content} />
               ))}
 
-              {error ? <p className="text-sm text-red-300">{error}</p> : null}
+              {error ? <p className="text-xs text-red-300 sm:text-sm">{error}</p> : null}
             </div>
 
-            <ChatInput value={input} onChange={setInput} onSubmit={() => void submit()} disabled={loading} />
+            <div className="border-t border-white/10 px-4 py-3 sm:px-5 sm:py-4">
+              <ChatInput
+                value={input}
+                onChange={setInput}
+                onSubmit={() => void submit()}
+                disabled={loading}
+              />
+            </div>
           </aside>
         </div>
       ) : null}

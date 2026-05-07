@@ -12,7 +12,7 @@ export function ChatMessage({ role, content }: ChatMessageProps) {
     <div className={isUser ? "flex justify-end" : "flex justify-start"}>
       <div
         className={[
-          "max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-6 shadow-dashboard-panel",
+          "max-w-[90%] rounded-xl px-3 py-2 text-sm leading-5 shadow-dashboard-panel sm:max-w-[85%] sm:rounded-2xl sm:px-4 sm:py-3 sm:text-sm sm:leading-6",
           isUser
             ? "bg-accent text-[#141416]"
             : "border border-white/10 bg-[#242428] text-foreground",

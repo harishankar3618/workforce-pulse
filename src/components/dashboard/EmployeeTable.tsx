@@ -57,17 +57,17 @@ export function EmployeeTable({ employees }: EmployeeTableProps) {
     return copy;
   }, [descending, employees, sortKey]);
 
-  const visibleEmployees = sortedEmployees.filter((employee) => {
-    if (department && employee.department !== department) {
-      return false;
-    }
+   const visibleEmployees = sortedEmployees.filter((employee) => {
+     if (department && employee.department !== department) {
+       return false;
+     }
 
-    if (taskCategory && !employee.topTasks.some((task) => task.taskCategory === taskCategory)) {
-      return false;
-    }
+     if (taskCategory && !employee.topTasks.some((task) => task.taskCategory === taskCategory)) {
+       return false;
+     }
 
-    return true;
-  });
+     return true;
+   });
 
   const toggleSort = (key: SortKey) => {
     if (sortKey === key) {
@@ -80,112 +80,165 @@ export function EmployeeTable({ employees }: EmployeeTableProps) {
   };
 
   return (
-    <section className="rounded-[24px] border border-border/70 bg-card p-5 shadow-dashboard-panel">
-      <div className="flex items-start justify-between gap-4">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Employee table</p>
-          <h2 className="mt-2 text-2xl font-semibold text-foreground">Filtered workforce view</h2>
+    <section className="rounded-2xl border border-border/70 bg-card p-3 shadow-dashboard-panel sm:p-4 md:p-5">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+        <div className="space-y-1">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground sm:text-xs">
+            Employee table
+          </p>
+          <h2 className="text-lg font-semibold text-foreground sm:mt-1 sm:text-xl md:text-2xl">
+            Filtered workforce view
+          </h2>
         </div>
-        <div className="text-right text-xs uppercase tracking-[0.18em] text-muted-foreground">
+        <div className="text-right text-[10px] uppercase tracking-[0.18em] text-muted-foreground sm:text-xs">
           {visibleEmployees.length} visible
         </div>
       </div>
 
-      <div className="mt-5 overflow-hidden rounded-[20px] border border-white/8">
-        <div className="max-h-[440px] overflow-auto">
-          <table className="w-full min-w-[760px] border-collapse text-sm">
-            <thead className="sticky top-0 z-10 bg-[#1C1C1F]">
-              <tr className="border-b border-white/10 text-left text-xs uppercase tracking-[0.18em] text-muted-foreground">
-                {[
-                  ["employeeId", "Employee"],
-                  ["department", "Department"],
-                  ["totalMinutes", "Total hrs"],
-                  ["repetitiveShare", "Rep share"],
-                  ["inrCostMonth", "INR / mo"],
-                ].map(([key, label]) => (
-                  <th key={key} className="px-4 py-3">
+      <div className="mt-3 -mx-3 sm:-mx-0">
+        <div className="overflow-x-auto rounded-[16px] border border-white/8">
+          <div className="max-h-[400px] sm:max-h-[440px] overflow-auto">
+            <table className="w-full min-w-[700px] border-collapse text-[11px] sm:text-sm">
+              <thead className="sticky top-0 bg-[#1C1C1F]">
+                <tr className="border-b border-white/10 text-left text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
+                  <th className="px-2.5 py-2 sm:px-4 sm:py-3">
                     <button
                       type="button"
-                      onClick={() => toggleSort(key as SortKey)}
+                      onClick={() => toggleSort("employeeId")}
                       className="inline-flex items-center gap-1 text-left transition hover:text-foreground"
                     >
-                      {label}
-                      {sortKey === key ? (
-                        descending ? (
-                          <ChevronDown className="h-4 w-4" />
-                        ) : (
-                          <ChevronUp className="h-4 w-4" />
-                        )
+                      Employee
+                      {sortKey === "employeeId" ? (
+                        descending ? <ChevronDown className="ml-1 h-3 w-3 sm:h-4 sm:w-4" /> : <ChevronUp className="ml-1 h-3 w-3 sm:h-4 sm:w-4" />
                       ) : null}
                     </button>
                   </th>
-                ))}
-                <th className="px-4 py-3">Top task</th>
-              </tr>
-            </thead>
-            <tbody>
-              {visibleEmployees.flatMap((employee) => {
-                const expanded = expandedEmployeeId === employee.employeeId;
-                const rows = [
-                  <tr
-                    key={employee.employeeId}
-                    onClick={() => setExpandedEmployeeId(expanded ? null : employee.employeeId)}
-                    className="cursor-pointer border-b border-white/6 transition hover:bg-white/4"
-                  >
-                    <td className="hidden px-4 py-4 text-foreground sm:table-cell">{employee.employeeId}</td>
-                    <td className="px-4 py-4 text-sm font-medium text-foreground md:text-base">
-                      <div>{employee.employeeId}</div>
-                      <div className="text-xs text-muted-foreground sm:hidden">{employee.department}</div>
-                    </td>
-                    <td className="hidden px-4 py-4 text-muted-foreground md:table-cell">{employee.department}</td>
-                    <td className="hidden px-4 py-4 text-muted-foreground sm:table-cell">{Math.round(employee.totalMinutes / 60)} hrs</td>
-                    <td className="px-4 py-4 text-muted-foreground">
-                      <span className="inline-block sm:hidden">{Math.round(employee.repetitiveShare * 100)}%</span>
-                      <span className="hidden sm:inline">{Math.round(employee.repetitiveShare * 100)}%</span>
-                    </td>
-                    <td className="hidden px-4 py-4 text-muted-foreground lg:table-cell">
-                      {employee.inrCostMonth === null ? "n/a" : `₹${employee.inrCostMonth.toLocaleString("en-IN")}`}
-                    </td>
-                    <td className="px-4 py-4 text-right text-xs font-medium text-foreground sm:text-left">
-                      {employee.topTasks[0]?.taskCategory ?? "None"}
-                      {expanded ? <ChevronUp className="ml-2 inline h-4 w-4" /> : <ChevronDown className="ml-2 inline h-4 w-4" />}
-                    </td>
-                  </tr>,
-                ];
+                  <th className="hidden px-2.5 py-2 sm:px-4 sm:py-3 sm:table-cell">
+                    <button
+                      type="button"
+                      onClick={() => toggleSort("department")}
+                      className="inline-flex items-center gap-1 text-left transition hover:text-foreground"
+                    >
+                      Dept
+                      {sortKey === "department" ? (
+                        descending ? <ChevronDown className="h-3 w-3 sm:h-4 sm:w-4" /> : <ChevronUp className="h-3 w-3 sm:h-4 sm:w-4" />
+                      ) : null}
+                    </button>
+                  </th>
+                  <th className="px-2.5 py-2 sm:px-4 sm:py-3">
+                    <button
+                      type="button"
+                      onClick={() => toggleSort("totalMinutes")}
+                      className="inline-flex items-center gap-1 text-left transition hover:text-foreground"
+                    >
+                      Hours
+                      {sortKey === "totalMinutes" ? (
+                        descending ? <ChevronDown className="h-3 w-3 sm:h-4 sm:w-4" /> : <ChevronUp className="h-3 w-3 sm:h-4 sm:w-4" />
+                      ) : null}
+                    </button>
+                  </th>
+                  <th className="px-2.5 py-2 sm:px-4 sm:py-3">
+                    <button
+                      type="button"
+                      onClick={() => toggleSort("repetitiveShare")}
+                      className="inline-flex items-center gap-1 text-left transition hover:text-foreground"
+                    >
+                      Rep
+                      {sortKey === "repetitiveShare" ? (
+                        descending ? <ChevronDown className="h-3 w-3 sm:h-4 sm:w-4" /> : <ChevronUp className="h-3 w-3 sm:h-4 sm:w-4" />
+                      ) : null}
+                    </button>
+                  </th>
+                  <th className="hidden px-2.5 py-2 sm:px-4 sm:py-3 md:table-cell">
+                    <button
+                      type="button"
+                      onClick={() => toggleSort("inrCostMonth")}
+                      className="inline-flex items-center gap-1 text-left transition hover:text-foreground"
+                    >
+                      INR
+                      {sortKey === "inrCostMonth" ? (
+                        descending ? <ChevronDown className="h-3 w-3 sm:h-4 sm:w-4" /> : <ChevronUp className="h-3 w-3 sm:h-4 sm:w-4" />
+                      ) : null}
+                    </button>
+                  </th>
+                  <th className="px-2.5 py-2 sm:px-4 sm:py-3">Top task</th>
+                </tr>
+              </thead>
+              <tbody>
+                {visibleEmployees.flatMap((employee) => {
+                  const expanded = expandedEmployeeId === employee.employeeId;
 
-                if (expanded) {
-                  rows.push(
-                    <tr key={`${employee.employeeId}-expanded`} className="border-b border-white/6 bg-white/3">
-                      <td colSpan={6} className="px-4 py-4">
-                        <div className="space-y-3 sm:grid sm:gap-3 sm:grid-cols-2 md:grid-cols-3">
-                          <div className="sm:hidden">
-                            <p className="text-xs uppercase tracking-[0.16em] text-muted-foreground">Total hours</p>
-                            <p className="mt-1 text-sm font-semibold text-foreground">{Math.round(employee.totalMinutes / 60)} hrs</p>
-                          </div>
-                          <div className="lg:hidden">
-                            <p className="text-xs uppercase tracking-[0.16em] text-muted-foreground">Monthly INR</p>
-                            <p className="mt-1 text-sm font-semibold text-foreground">
-                              {employee.inrCostMonth === null ? "n/a" : `₹${employee.inrCostMonth.toLocaleString("en-IN")}`}
-                            </p>
-                          </div>
-                          {employee.topTasks.slice(0, 3).map((task) => (
-                            <div key={task.taskCategory} className="rounded-2xl border border-white/8 bg-[#242428] p-3 sm:p-4">
-                              <p className="text-sm font-semibold text-foreground">{task.taskCategory}</p>
-                              <p className="mt-2 text-xs uppercase tracking-[0.16em] text-muted-foreground">
-                                {Math.round(task.totalMinutes / 60)} hrs · {Math.round(task.repetitiveMinutes / Math.max(1, task.totalMinutes || 1) * 100)}% repetitive
-                              </p>
-                            </div>
-                          ))}
-                        </div>
+                  return [
+                    <tr
+                      key={employee.employeeId}
+                      onClick={() => setExpandedEmployeeId(expanded ? null : employee.employeeId)}
+                      className="cursor-pointer border-b border-white/6 transition hover:bg-white/4"
+                    >
+                      <td className="px-2.5 py-2.5 font-medium text-foreground sm:px-4 sm:py-4">
+                        {employee.employeeId}
+                      </td>
+                      <td className="hidden px-2.5 py-2.5 text-muted-foreground sm:table-cell sm:px-4 sm:py-4">
+                        {employee.department}
+                      </td>
+                      <td className="px-2.5 py-2.5 text-muted-foreground sm:px-4 sm:py-4">
+                        {Math.round(employee.totalMinutes / 60)}h
+                      </td>
+                      <td className="px-2.5 py-2.5 text-muted-foreground sm:px-4 sm:py-4">
+                        {Math.round(employee.repetitiveShare * 100)}%
+                      </td>
+                      <td className="hidden px-2.5 py-2.5 text-muted-foreground md:table-cell md:px-4 md:py-4">
+                        {employee.inrCostMonth === null ? "n/a" : `₹${employee.inrCostMonth.toLocaleString("en-IN")}`}
+                      </td>
+                      <td className="px-2.5 py-2.5 text-right text-xs font-medium text-foreground sm:px-4 sm:py-4 sm:text-left">
+                        <span className="line-clamp-1">{employee.topTasks[0]?.taskCategory ?? "None"}</span>
+                        {expanded ? <ChevronUp className="ml-1 inline h-3.5 w-3.5 sm:ml-2 sm:h-4 sm:w-4" /> : <ChevronDown className="ml-1 inline h-3.5 w-3.5 sm:ml-2 sm:h-4 sm:w-4" />}
                       </td>
                     </tr>,
-                  );
-                }
-
-                return rows;
-              })}
-            </tbody>
-          </table>
+                    expanded ? (
+                      <tr
+                        key={`${employee.employeeId}-expanded`}
+                        className="border-b border-white/6 bg-white/3"
+                      >
+                        <td colSpan={6} className="px-2.5 py-3 sm:px-4 sm:py-4">
+                          <div className="space-y-2 sm:grid sm:gap-2 sm:space-y-0 sm:grid-cols-2 md:grid-cols-3">
+                            <div className="sm:hidden">
+                              <p className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">
+                                Total hours
+                              </p>
+                              <p className="mt-1 text-sm font-semibold text-foreground">
+                                {Math.round(employee.totalMinutes / 60)} hrs
+                              </p>
+                            </div>
+                            <div className="md:hidden">
+                              <p className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">
+                                Monthly INR
+                              </p>
+                              <p className="mt-1 text-sm font-semibold text-foreground">
+                                {employee.inrCostMonth === null ? "n/a" : `₹${employee.inrCostMonth.toLocaleString("en-IN")}`}
+                              </p>
+                            </div>
+                            {employee.topTasks.slice(0, 3).map((task) => (
+                              <div
+                                key={task.taskCategory}
+                                className="rounded-xl border border-white/8 bg-[#242428] p-2.5 sm:p-3"
+                              >
+                                <p className="text-xs font-semibold text-foreground sm:text-sm line-clamp-1">
+                                  {task.taskCategory}
+                                </p>
+                                <p className="mt-1.5 text-[10px] leading-4 text-muted-foreground sm:mt-2 sm:text-xs">
+                                  {Math.round(task.totalMinutes / 60)}h · {Math.round(task.repetitiveMinutes / Math.max(1, task.totalMinutes || 1) * 100)}% repetitive
+                                </p>
+                              </div>
+                            ))}
+                          </div>
+                        </td>
+                      </tr>
+                    ) : null,
+                  ];
+                })}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>

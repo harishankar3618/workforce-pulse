@@ -67,42 +67,42 @@ export function TimeSinkChart({ tasks, apps, departments }: TimeSinkChartProps) 
 
     return {
       backgroundColor: "transparent",
-      grid: { left: 8, right: 16, top: 24, bottom: 18, containLabel: true },
+      grid: { left: 4, right: 12, top: 20, bottom: 16, containLabel: true },
       tooltip: {
         trigger: "axis",
         axisPointer: { type: "shadow" },
         backgroundColor: "rgba(28,28,31,0.96)",
         borderColor: "rgba(255,255,255,0.08)",
-        textStyle: { color: "#F4F4F5" },
+        textStyle: { color: "#F4F4F5", fontSize: 11 },
       },
       xAxis: {
         type: "value",
         axisLine: { lineStyle: { color: "rgba(255,255,255,0.12)" } },
         splitLine: { lineStyle: { color: "rgba(255,255,255,0.07)" } },
-        axisLabel: { color: "#A1A1AA" },
+        axisLabel: { color: "#A1A1AA", fontSize: 10 },
       },
       yAxis: {
         type: "category",
         data: axisLabels,
         axisLine: { lineStyle: { color: "rgba(255,255,255,0.12)" } },
         axisTick: { show: false },
-        axisLabel: { color: "#E4E4E7", width: 140, overflow: "truncate" },
+        axisLabel: { color: "#E4E4E7", width: 100, overflow: "truncate", fontSize: 11 },
       },
       series: [
         {
           name: "Repetitive",
           type: "bar",
           stack: "time",
-          barWidth: 16,
-          itemStyle: { color: "#F59E0B", borderRadius: [8, 8, 8, 8] },
+          barWidth: "60%",
+          itemStyle: { color: "#F59E0B", borderRadius: [6, 6, 6, 6] },
           data: labels.map((item) => item.repetitive),
         },
         {
           name: "Other",
           type: "bar",
           stack: "time",
-          barWidth: 16,
-          itemStyle: { color: "rgba(148,163,184,0.25)", borderRadius: [8, 8, 8, 8] },
+          barWidth: "60%",
+          itemStyle: { color: "rgba(148,163,184,0.25)", borderRadius: [6, 6, 6, 6] },
           data: labels.map((item) => Math.max(0, item.total - item.repetitive)),
         },
       ],
@@ -127,20 +127,24 @@ export function TimeSinkChart({ tasks, apps, departments }: TimeSinkChartProps) 
   };
 
   return (
-    <section className="rounded-[24px] border border-border/70 bg-card p-5 shadow-dashboard-panel">
-      <div className="flex items-start justify-between gap-4">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Time sink breakdown</p>
-          <h2 className="mt-2 text-2xl font-semibold text-foreground">Task, app, department</h2>
+    <section className="rounded-2xl border border-border/70 bg-card p-3 shadow-dashboard-panel sm:p-4 md:p-5">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+        <div className="space-y-1">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground sm:text-xs">
+            Time sink breakdown
+          </p>
+          <h2 className="text-lg font-semibold text-foreground sm:mt-1 sm:text-xl md:text-2xl">
+            Task, app, department
+          </h2>
         </div>
-        <div className="flex rounded-full border border-white/10 bg-white/5 p-1 text-sm text-muted-foreground">
+        <div className="flex rounded-full border border-white/10 bg-white/5 p-1 text-muted-foreground">
           {(["tasks", "apps", "departments"] as ViewMode[]).map((item) => (
             <button
               key={item}
               type="button"
               onClick={() => setMode(item)}
               className={[
-                "rounded-full px-3 py-1.5 capitalize transition",
+                "rounded-full px-2.5 py-1 text-[11px] capitalize transition sm:px-3 sm:py-1.5 sm:text-sm",
                 mode === item ? "bg-accent text-[#141416]" : "hover:text-foreground",
               ].join(" ")}
             >
@@ -150,7 +154,7 @@ export function TimeSinkChart({ tasks, apps, departments }: TimeSinkChartProps) 
         </div>
       </div>
 
-      <div className="mt-5 h-[420px]">
+      <div className="mt-3 h-[280px] sm:mt-4 sm:h-[320px] md:h-[360px] lg:h-[420px]">
         <ReactECharts option={option} style={{ height: "100%", width: "100%" }} onEvents={{ click: handleClick }} />
       </div>
     </section>
