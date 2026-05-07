@@ -24,8 +24,8 @@ function Chip({
       type="button"
       onClick={onClick}
       className={[
-        "whitespace-nowrap rounded-full border px-3 py-1.5 text-xs transition",
-        "min-h-[32px] sm:min-h-[36px]",
+        "whitespace-nowrap rounded-full border px-2.5 py-1 text-[10px] transition sm:px-3 sm:py-1.5 sm:text-xs",
+        "min-h-[28px] sm:min-h-[32px]",
         active
           ? "border-accent/60 bg-accent/10 text-accent"
           : "border-white/10 bg-white/3 text-muted-foreground hover:border-white/20 hover:text-foreground",
@@ -88,9 +88,9 @@ export function FilterBar({ departments, taskCategories, weeks }: FilterBarProps
           <button
             type="button"
             onClick={clearAll}
-            className="ml-auto inline-flex shrink-0 items-center gap-1.5 rounded-full border border-white/10 bg-white/3 px-3 py-1.5 text-xs text-muted-foreground transition hover:border-white/20 hover:text-foreground"
+            className="ml-auto inline-flex shrink-0 items-center gap-1 rounded-full border border-white/10 bg-white/3 px-2 py-1 text-[10px] text-muted-foreground transition hover:border-white/20 hover:text-foreground sm:px-3 sm:py-1.5 sm:text-xs"
           >
-            <X className="h-3.5 w-3.5" />
+            <X className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
             <span>Clear</span>
           </button>
         ) : null}

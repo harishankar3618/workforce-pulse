@@ -137,14 +137,14 @@ export function TimeSinkChart({ tasks, apps, departments }: TimeSinkChartProps) 
             Task, app, department
           </h2>
         </div>
-        <div className="flex rounded-full border border-white/10 bg-white/5 p-1 text-muted-foreground">
+        <div className="flex rounded-full border border-white/10 bg-white/5 p-0.5 text-muted-foreground">
           {(["tasks", "apps", "departments"] as ViewMode[]).map((item) => (
             <button
               key={item}
               type="button"
               onClick={() => setMode(item)}
               className={[
-                "rounded-full px-2.5 py-1 text-[11px] capitalize transition sm:px-3 sm:py-1.5 sm:text-sm",
+                "rounded-full px-2 py-1 text-[10px] capitalize transition sm:px-2.5 sm:py-1 sm:text-xs",
                 mode === item ? "bg-accent text-[#141416]" : "hover:text-foreground",
               ].join(" ")}
             >

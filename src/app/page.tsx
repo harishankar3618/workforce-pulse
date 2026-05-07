@@ -73,7 +73,7 @@ export default function HomePage() {
               <h1 className="text-2xl font-semibold tracking-tight leading-tight sm:text-3xl md:text-4xl">
                 Executive operational intelligence
               </h1>
-              <p className="text-xs leading-5 text-muted-foreground sm:text-sm">
+              <p className="max-w-2xl text-[11px] leading-5 text-muted-foreground break-words sm:text-sm sm:leading-6">
                 {analytics.dateRange.start} to {analytics.dateRange.end} · {analytics.quality.rowsClean} clean rows · {analytics.quality.rowsDropped} dropped rows
               </p>
             </div>
