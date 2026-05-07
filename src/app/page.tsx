@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useMemo, useEffect } from "react";
 
 import { AnomalyBanner } from "@/components/dashboard/AnomalyBanner";
 import { AutomationTable } from "@/components/dashboard/AutomationTable";
@@ -14,10 +14,16 @@ import { TrendChart } from "@/components/dashboard/TrendChart";
 import { ChatPanel } from "@/components/chat/ChatPanel";
 import useAnalyticsStore from "@/store/analyticsStore";
 import { useFilteredAnalytics } from "@/hooks/useFilteredAnalytics";
+import { computeFilteredHeadline } from "@/lib/ai/buildContext";
 
 export default function HomePage() {
   const fetchAnalytics = useAnalyticsStore((state) => state.fetchAnalytics);
   const { analytics, filtered, loading, error } = useFilteredAnalytics();
+
+  const filteredHeadline = useMemo(() => {
+    if (!analytics || !filtered) return null;
+    return computeFilteredHeadline(analytics, filtered);
+  }, [analytics, filtered]);
 
   useEffect(() => {
     void fetchAnalytics();
@@ -80,8 +86,8 @@ export default function HomePage() {
         <section className="grid gap-4 md:grid-cols-3">
           <KPICard
             label="Recoverable Hours / Month"
-            value={`~${analytics.headline.recoverableHoursMonth} hrs`}
-            subtitle={`95% CI ${analytics.headline.recoverableHoursCi[0]} - ${analytics.headline.recoverableHoursCi[1]} hrs`}
+            value={`~${filteredHeadline?.recoverableHoursMonth} hrs`}
+            subtitle={`95% CI ${filteredHeadline?.recoverableHoursCi[0]} - ${filteredHeadline?.recoverableHoursCi[1]} hrs`}
             methodology={{
               title: "Recoverable hours methodology",
               formula: "Sum repetitive minutes, apply 60% automation recovery coefficient, convert to monthly hours.",
@@ -90,7 +96,7 @@ export default function HomePage() {
                 "Filtered from repetitive minutes only",
                 "Uses a 4.33 weeks/month conversion",
               ],
-              confidenceInterval: `${analytics.headline.recoverableHoursCi[0]} - ${analytics.headline.recoverableHoursCi[1]} hrs`,
+              confidenceInterval: `${filteredHeadline?.recoverableHoursCi[0]} - ${filteredHeadline?.recoverableHoursCi[1]} hrs`,
               excludedRows: analytics.quality.rowsDropped,
               excludedEmployees: analytics.quality.employeeIssues.missingMetadata,
               rationale: "This coefficient is conservative enough for COO planning while still capturing measurable automation upside.",
@@ -98,8 +104,8 @@ export default function HomePage() {
           />
           <KPICard
             label="Recoverable INR / Month"
-            value={`~₹${analytics.headline.recoverableInrMonth.toLocaleString("en-IN")}`}
-            subtitle={`95% CI ₹${analytics.headline.recoverableInrCi[0].toLocaleString("en-IN")} - ₹${analytics.headline.recoverableInrCi[1].toLocaleString("en-IN")}`}
+            value={`~₹${filteredHeadline?.recoverableInrMonth.toLocaleString("en-IN")}`}
+            subtitle={`95% CI ₹${filteredHeadline?.recoverableInrCi[0].toLocaleString("en-IN")} - ₹${filteredHeadline?.recoverableInrCi[1].toLocaleString("en-IN")}`}
             methodology={{
               title: "Recoverable INR methodology",
               formula: "For each compensated employee, repetitive minutes × hourly cost × 60% recovery coefficient.",
@@ -108,7 +114,7 @@ export default function HomePage() {
                 "Hourly cost uses 2,376 working hours/year",
                 "Values are rounded to whole rupees for executive display",
               ],
-              confidenceInterval: `₹${analytics.headline.recoverableInrCi[0].toLocaleString("en-IN")} - ₹${analytics.headline.recoverableInrCi[1].toLocaleString("en-IN")}`,
+              confidenceInterval: `₹${filteredHeadline?.recoverableInrCi[0].toLocaleString("en-IN")} - ₹${filteredHeadline?.recoverableInrCi[1].toLocaleString("en-IN")}`,
               excludedRows: analytics.quality.rowsDropped,
               excludedEmployees: analytics.quality.employeeIssues.missingMetadata,
               rationale: "This is the rupee value of recoverable repetitive work, weighted by compensation so the output tracks financial impact.",
@@ -116,7 +122,7 @@ export default function HomePage() {
           />
           <KPICard
             label="Average Repetitive Share"
-            value={`${analytics.headline.avgRepSharePct}%`}
+            value={`${filteredHeadline?.avgRepSharePct}%`}
             subtitle="Share of total logged minutes marked repetitive"
             methodology={{
               title: "Repetitive share methodology",

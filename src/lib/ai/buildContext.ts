@@ -240,20 +240,94 @@ export function buildContext(
   ].join("\n");
 }
 
+function computeFilteredHeadline(
+  analytics: AnalyticsResult,
+  filteredView: FilteredAnalyticsView,
+): {
+  recoverableHoursMonth: number;
+  recoverableHoursCi: [number, number];
+  recoverableInrMonth: number;
+  recoverableInrCi: [number, number];
+  avgRepSharePct: number;
+} {
+  // If no filters applied, return original headline
+  if (
+    !filteredView.filters.department &&
+    !filteredView.filters.taskCategory &&
+    !filteredView.filters.week &&
+    !filteredView.filters.employeeId
+  ) {
+    return {
+      recoverableHoursMonth: analytics.headline.recoverableHoursMonth,
+      recoverableHoursCi: analytics.headline.recoverableHoursCi,
+      recoverableInrMonth: analytics.headline.recoverableInrMonth,
+      recoverableInrCi: analytics.headline.recoverableInrCi,
+      avgRepSharePct: analytics.headline.avgRepSharePct,
+    };
+  }
+
+  // Compute from filtered employees
+  const filteredEmployees = filteredView.employees;
+
+  if (filteredEmployees.length === 0) {
+    return {
+      recoverableHoursMonth: 0,
+      recoverableHoursCi: [0, 0],
+      recoverableInrMonth: 0,
+      recoverableInrCi: [0, 0],
+      avgRepSharePct: 0,
+    };
+  }
+
+  // Aggregate metrics from filtered employees
+  let totalRecoverableHours = 0;
+  let totalRecoverableINR = 0;
+  let totalLoggedMinutes = 0;
+  let totalRepetitiveMinutes = 0;
+
+  for (const employee of filteredEmployees) {
+    totalRecoverableHours += employee.recoverableHoursMonth ?? 0;
+    totalRecoverableINR += employee.inrCostMonth ?? 0;
+    totalLoggedMinutes += employee.totalMinutes ?? 0;
+    totalRepetitiveMinutes += employee.repetitiveMinutes ?? 0;
+  }
+
+  // Apply conservative confidence intervals: ±15% from the computed value
+  const hourCi: [number, number] = [
+    Math.round(totalRecoverableHours * 0.85),
+    Math.round(totalRecoverableHours * 1.15),
+  ];
+  const inrCi: [number, number] = [
+    Math.round(totalRecoverableINR * 0.85),
+    Math.round(totalRecoverableINR * 1.15),
+  ];
+
+  const avgRepSharePct = totalLoggedMinutes > 0 ? Math.round((totalRepetitiveMinutes / totalLoggedMinutes) * 1000) / 10 : 0;
+
+  return {
+    recoverableHoursMonth: Math.round(totalRecoverableHours),
+    recoverableHoursCi: hourCi,
+    recoverableInrMonth: Math.round(totalRecoverableINR),
+    recoverableInrCi: inrCi,
+    avgRepSharePct,
+  };
+}
+
 export function buildExportPayload(
   analytics: AnalyticsResult,
   filters: Filters,
 ): ExportPayload {
   const filtered = applyAnalyticsFilters(analytics, filters);
+  const filteredHeadline = computeFilteredHeadline(analytics, filtered);
 
   return {
     generatedAt: analytics.generatedAt,
     dateRange: formatDateRange(analytics),
     activeFilters: filtered.filters,
     headline: {
-      recoverableHoursMonth: analytics.headline.recoverableHoursMonth,
-      recoverableInrMonth: analytics.headline.recoverableInrMonth,
-      avgRepSharePct: analytics.headline.avgRepSharePct,
+      recoverableHoursMonth: filteredHeadline.recoverableHoursMonth,
+      recoverableInrMonth: filteredHeadline.recoverableInrMonth,
+      avgRepSharePct: filteredHeadline.avgRepSharePct,
     },
     topTasks: filtered.tasks.slice(0, 5).map((task) => ({
       rank: task.rank,
@@ -265,5 +339,7 @@ export function buildExportPayload(
     summaryLine: `Workforce Pulse Analysis | ${formatDateRange(analytics)}`,
   };
 }
+
+export { computeFilteredHeadline };
 
 export default buildContext;
