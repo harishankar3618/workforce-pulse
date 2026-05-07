@@ -86,7 +86,7 @@ export async function parseActivityLogs(
 ): Promise<ParseActivityLogsResult> {
   const absolutePath = path.isAbsolute(filePath)
     ? filePath
-    : path.resolve(process.cwd(), filePath);
+    : path.join(process.cwd(), filePath);
 
   let fileContents: string;
 

@@ -1,8 +1,8 @@
 export const APP_NAME = "Workforce Pulse";
 
 export const DATA_SOURCE = {
-  employeesPath: "public/data/employees.json",
-  activityPath: "public/data/activity_logs.csv",
+  employeesPath: "data/employees.json",
+  activityPath: "data/activity_logs.csv",
 } as const;
 
 export const HOURS_PER_WORKDAY = 9;

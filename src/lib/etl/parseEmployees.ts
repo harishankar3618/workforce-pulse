@@ -83,9 +83,10 @@ export class EmployeeParseError extends Error {
 export async function parseEmployees(
   filePath = DATA_SOURCE.employeesPath,
 ): Promise<ParseEmployeesResult> {
+  // Resolve path relative to project root (process.cwd() works on Vercel and local)
   const absolutePath = path.isAbsolute(filePath)
     ? filePath
-    : path.resolve(process.cwd(), filePath);
+    : path.join(process.cwd(), filePath);
 
   let fileContents: string;
 
