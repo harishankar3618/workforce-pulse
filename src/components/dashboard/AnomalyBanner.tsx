@@ -19,7 +19,7 @@ export function AnomalyBanner({ anomalies }: AnomalyBannerProps) {
   }
 
   return (
-    <section className="rounded-2xl border border-amber-500/30 bg-[#2A2010] px-4 py-3 text-foreground shadow-dashboard-panel sm:px-5 sm:py-4">
+    <section className="min-w-0 rounded-2xl border border-amber-500/30 bg-[#2A2010] px-4 py-3 text-foreground shadow-dashboard-panel sm:px-5 sm:py-4">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <div className="flex gap-2.5 sm:gap-3">
           <div className="mt-0.5 rounded-full bg-amber-500/15 p-1.5 text-amber-400 sm:p-2">

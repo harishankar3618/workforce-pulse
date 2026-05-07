@@ -1,0 +1,4853 @@
+[
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "21/10/2025 14:44",
+    "app_used": "outlook",
+    "task_category": "Cal Mgmt",
+    "duration_minutes": "24",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "15/10/2025 11:05",
+    "app_used": "gmail",
+    "task_category": "internal comms",
+    "duration_minutes": "29",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-08 13:46:09",
+    "app_used": "slack",
+    "task_category": "Status Updates",
+    "duration_minutes": "40",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-17T13:21:23",
+    "app_used": "Gmail",
+    "task_category": "Internal Communication",
+    "duration_minutes": "1",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "20/10/2025 13:42",
+    "app_used": "MS Outlook",
+    "task_category": "Email Triage",
+    "duration_minutes": "45",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-09 14:18:29",
+    "app_used": "EXCEL",
+    "task_category": "REPORTING",
+    "duration_minutes": "5",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-06 15:27:57",
+    "app_used": "SLACK",
+    "task_category": "status updates",
+    "duration_minutes": "25",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-15 15:44:22",
+    "app_used": "EXCEL",
+    "task_category": "REPORTING",
+    "duration_minutes": "24",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "20/10/2025 13:52",
+    "app_used": "Zoho CRM",
+    "task_category": "Lead-Entry",
+    "duration_minutes": "6",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-08T16:39:26",
+    "app_used": "chrome",
+    "task_category": "Vendor Portals",
+    "duration_minutes": "1",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-15T09:14:51",
+    "app_used": "Gmail",
+    "task_category": "client communication",
+    "duration_minutes": "28",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-16 15:17",
+    "app_used": "MS Excel",
+    "task_category": "data-entry",
+    "duration_minutes": "25",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-16T17:01:45",
+    "app_used": "Microsoft Excel",
+    "task_category": "REPORTING",
+    "duration_minutes": "38",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-15 10:29",
+    "app_used": "sap",
+    "task_category": "Vendor Mgmt",
+    "duration_minutes": "20",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-22 09:45:28",
+    "app_used": "sap",
+    "task_category": "vendor management",
+    "duration_minutes": "12",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-13 11:36:53",
+    "app_used": "SAP",
+    "task_category": "vendor management",
+    "duration_minutes": "6",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-23 12:50:32",
+    "app_used": "gmail",
+    "task_category": "email triage",
+    "duration_minutes": "32",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "09/10/2025 14:41",
+    "app_used": "Outlook",
+    "task_category": "EMAIL TRIAGE",
+    "duration_minutes": "30",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-17 11:46:33",
+    "app_used": "SLACK",
+    "task_category": "Internal Comms",
+    "duration_minutes": "20",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-14 11:43",
+    "app_used": "PowerPoint",
+    "task_category": "REPORTING",
+    "duration_minutes": "24",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "17/10/2025 13:31",
+    "app_used": "zoom",
+    "task_category": "meetings",
+    "duration_minutes": "40",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-20 12:29",
+    "app_used": "gmail",
+    "task_category": "EMAIL TRIAGE",
+    "duration_minutes": "-3",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "22/10/2025 12:40",
+    "app_used": "SLACK",
+    "task_category": "status updates",
+    "duration_minutes": "14",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-14 12:24:04",
+    "app_used": "sap",
+    "task_category": "Invoice Proc",
+    "duration_minutes": "15",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-13 10:57:32",
+    "app_used": "gmail",
+    "task_category": "email triage",
+    "duration_minutes": "43",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-15T13:36:40",
+    "app_used": "outlook",
+    "task_category": "EMAIL TRIAGE",
+    "duration_minutes": "38",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-10 12:36:23",
+    "app_used": "chrome",
+    "task_category": "Research",
+    "duration_minutes": "32",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "14/10/2025 11:17",
+    "app_used": "SFDC",
+    "task_category": "Pipeline Review",
+    "duration_minutes": "20",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-21 14:02:57",
+    "app_used": "EXCEL",
+    "task_category": "data entry",
+    "duration_minutes": "6",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-08 14:27:19",
+    "app_used": "MS Outlook",
+    "task_category": "EMAIL TRIAGE",
+    "duration_minutes": "22",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-10T12:51:47",
+    "app_used": "MS Outlook",
+    "task_category": "Email Triage",
+    "duration_minutes": "39",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-23 12:43:59",
+    "app_used": "Zoho CRM",
+    "task_category": "CRM Updates",
+    "duration_minutes": "35",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-21 19:58:32",
+    "app_used": "GMAIL",
+    "task_category": "internal comms",
+    "duration_minutes": "9",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-23 10:22:43",
+    "app_used": "MS Word",
+    "task_category": "reporting",
+    "duration_minutes": "10",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "14/10/2025 16:23",
+    "app_used": "Salesforce",
+    "task_category": "Lead-Entry",
+    "duration_minutes": "13",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "23/10/2025 15:25",
+    "app_used": "Gmail",
+    "task_category": "EMAIL TRIAGE",
+    "duration_minutes": "14",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-24 18:35:32",
+    "app_used": "SAP",
+    "task_category": "Vendor Mgmt",
+    "duration_minutes": "14",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-08T10:06:57",
+    "app_used": "Gmail",
+    "task_category": "internal comms",
+    "duration_minutes": "6",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-23 20:19:00",
+    "app_used": "Microsoft Excel",
+    "task_category": "Reporting",
+    "duration_minutes": "38",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-06 18:55:10",
+    "app_used": "gmail",
+    "task_category": "internal comms",
+    "duration_minutes": "31",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-20 15:39:04",
+    "app_used": "Gmail",
+    "task_category": "Client Comms",
+    "duration_minutes": "17",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-15 15:22:27",
+    "app_used": "MS PowerPoint",
+    "task_category": "Deck Building",
+    "duration_minutes": "14",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-15 11:54:20",
+    "app_used": "Sales Force",
+    "task_category": "CRM Update",
+    "duration_minutes": "15",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-22T09:52:16",
+    "app_used": "sap",
+    "task_category": "Invoice Proc",
+    "duration_minutes": "1",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-22 16:10:04",
+    "app_used": "gmail",
+    "task_category": "client communication",
+    "duration_minutes": "12",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-07 11:51",
+    "app_used": "SLACK",
+    "task_category": "status updates",
+    "duration_minutes": "15",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "23/10/2025 14:39",
+    "app_used": "Word",
+    "task_category": "Drafting",
+    "duration_minutes": "1",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-07 09:03:35",
+    "app_used": "SFDC",
+    "task_category": "CRM Update",
+    "duration_minutes": "36",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-20 14:00",
+    "app_used": "Gmail",
+    "task_category": "Email Triage",
+    "duration_minutes": "22",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-21 14:11:24",
+    "app_used": "MS Outlook",
+    "task_category": "calendar management",
+    "duration_minutes": "42",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-24 16:04",
+    "app_used": "Microsoft Excel",
+    "task_category": "Reconciliation",
+    "duration_minutes": "26",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "14/10/2025 10:05",
+    "app_used": "MS Excel",
+    "task_category": "reporting",
+    "duration_minutes": "13",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-09 10:26:33",
+    "app_used": "Notion",
+    "task_category": "Notes",
+    "duration_minutes": "62",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-10 18:14:22",
+    "app_used": "JIRA",
+    "task_category": "ticket updates",
+    "duration_minutes": "28",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "23/10/2025 16:01",
+    "app_used": "NA",
+    "task_category": "Vendor Portals",
+    "duration_minutes": "27",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-09 11:16:23",
+    "app_used": "ppt",
+    "task_category": "REPORTING",
+    "duration_minutes": "27",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "14/10/2025 12:07",
+    "app_used": "salesforce",
+    "task_category": "Lead-Entry",
+    "duration_minutes": "39",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-07T09:48:15",
+    "app_used": "GMAIL",
+    "task_category": "Internal Communication",
+    "duration_minutes": "45",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "?",
+    "department": "HR",
+    "timestamp": "13/10/2025 13:05",
+    "app_used": "MS Outlook",
+    "task_category": "Email Triage",
+    "duration_minutes": "33",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-09T17:40:20",
+    "app_used": "gmail",
+    "task_category": "internal comms",
+    "duration_minutes": "37",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-08 11:34:31",
+    "app_used": "outlook",
+    "task_category": "Calendar Mgmt",
+    "duration_minutes": "4",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-21 15:30:13",
+    "app_used": "SLACK",
+    "task_category": "Internal Communication",
+    "duration_minutes": "11",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-24 08:08:30",
+    "app_used": "excel",
+    "task_category": "Recon",
+    "duration_minutes": "",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-15 16:37:06",
+    "app_used": "gmail",
+    "task_category": "Email Triage",
+    "duration_minutes": "17",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-13 13:17:21",
+    "app_used": "slack",
+    "task_category": "Internal Comms",
+    "duration_minutes": "46",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-22 11:40:08",
+    "app_used": "Outlook",
+    "task_category": "EMAIL TRIAGE",
+    "duration_minutes": "2",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-15 09:29:00",
+    "app_used": "notion",
+    "task_category": "Notes",
+    "duration_minutes": "2",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "16/10/2025 18:23",
+    "app_used": "MS Excel",
+    "task_category": "Recon",
+    "duration_minutes": "42",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-20 15:21:56",
+    "app_used": " Gmail ",
+    "task_category": "email triage",
+    "duration_minutes": "14",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "23/10/2025 09:25",
+    "app_used": "WhatsApp",
+    "task_category": "Client Comms",
+    "duration_minutes": "11",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-23 11:26:26",
+    "app_used": "slack",
+    "task_category": "internal comms",
+    "duration_minutes": "31",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-08 16:07:42",
+    "app_used": "Notion",
+    "task_category": "Documentation",
+    "duration_minutes": "12",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-13 14:34:47",
+    "app_used": "SLACK",
+    "task_category": "Status Updates",
+    "duration_minutes": "10",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-15 15:44",
+    "app_used": "Gmail",
+    "task_category": "Internal Comms",
+    "duration_minutes": "1",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-23T11:29:41",
+    "app_used": "Slack",
+    "task_category": "Internal Communication",
+    "duration_minutes": "19",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-08 11:42:05",
+    "app_used": "Chrome",
+    "task_category": "Research",
+    "duration_minutes": "5",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "15/10/2025 15:56",
+    "app_used": " Gmail ",
+    "task_category": "internal comms",
+    "duration_minutes": "27",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-13 18:30:09",
+    "app_used": "jira",
+    "task_category": "status updates",
+    "duration_minutes": "14",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-23 12:08:21",
+    "app_used": "Zoom",
+    "task_category": "meetings",
+    "duration_minutes": "26",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-06 15:23:28",
+    "app_used": "Powerpoint",
+    "task_category": "Deck Building",
+    "duration_minutes": "1",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-15 16:10:23",
+    "app_used": "gmail",
+    "task_category": "client communication",
+    "duration_minutes": "",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-08T14:52:40",
+    "app_used": "GMAIL",
+    "task_category": "Client Communication",
+    "duration_minutes": "1",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-08 15:58:17",
+    "app_used": "ppt",
+    "task_category": "Deck Building",
+    "duration_minutes": "32",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-22 08:07:22",
+    "app_used": "ZOOM",
+    "task_category": "Client Call",
+    "duration_minutes": "7",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-13 19:52:22",
+    "app_used": "excel",
+    "task_category": "reconciliation",
+    "duration_minutes": "18",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-23 17:27:26",
+    "app_used": "Salesforce",
+    "task_category": "CRM Updates",
+    "duration_minutes": "44",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "15/10/2025 08:04",
+    "app_used": "zoho",
+    "task_category": "Lead Entry",
+    "duration_minutes": "9",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "24/10/2025 13:14",
+    "app_used": "gmail",
+    "task_category": "Internal Comms",
+    "duration_minutes": "3",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "21/10/2025 17:49",
+    "app_used": "Sales Force",
+    "task_category": "CRM Update",
+    "duration_minutes": "12",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "08/10/2025 13:51",
+    "app_used": "MS PowerPoint",
+    "task_category": "Deck Building",
+    "duration_minutes": "26",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-07 10:12:20",
+    "app_used": "Zoho",
+    "task_category": "Lead-Entry",
+    "duration_minutes": "34",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-06 09:11",
+    "app_used": "Gmail",
+    "task_category": "Internal Comms",
+    "duration_minutes": "30",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-20T16:55:28",
+    "app_used": "gmail",
+    "task_category": "Internal Comms",
+    "duration_minutes": "46",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-13T14:12:15",
+    "app_used": "GMAIL",
+    "task_category": "Internal Comms",
+    "duration_minutes": "23",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "22/10/2025 13:46",
+    "app_used": "PowerPoint",
+    "task_category": "REPORTING",
+    "duration_minutes": "35",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-14T11:23:25",
+    "app_used": "MS Excel",
+    "task_category": "REPORTING",
+    "duration_minutes": "24",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-20T10:36:23",
+    "app_used": "GMAIL",
+    "task_category": "internal comms",
+    "duration_minutes": "2",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "24/10/2025 10:29",
+    "app_used": "EXCEL",
+    "task_category": "reporting",
+    "duration_minutes": "2",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-21 14:44:53",
+    "app_used": "zoho",
+    "task_category": "Lead Entry",
+    "duration_minutes": "15",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-23 14:20",
+    "app_used": "slack",
+    "task_category": "status updates",
+    "duration_minutes": "9",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-17 15:55",
+    "app_used": "zoho",
+    "task_category": "Lead-Entry",
+    "duration_minutes": "17",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-23 10:41:08",
+    "app_used": "Zoho CRM",
+    "task_category": "CRM Update",
+    "duration_minutes": "8",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-24 16:34:44",
+    "app_used": "salesforce",
+    "task_category": "CRM Updates",
+    "duration_minutes": "27",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-13 19:59:10",
+    "app_used": "zoom",
+    "task_category": "Internal Meeting",
+    "duration_minutes": "6",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-21 11:25:22",
+    "app_used": " Gmail ",
+    "task_category": "email triage",
+    "duration_minutes": "6",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-14T15:10:59",
+    "app_used": "gmail",
+    "task_category": "EMAIL TRIAGE",
+    "duration_minutes": "2",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-24 11:06:52",
+    "app_used": "chrome",
+    "task_category": "Vendor Portals",
+    "duration_minutes": "1",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-07 12:16:21",
+    "app_used": "zoho",
+    "task_category": "Lead-Entry",
+    "duration_minutes": "10",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-23 10:18:39",
+    "app_used": "Gmail",
+    "task_category": "Client Comms",
+    "duration_minutes": "12",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-08 15:34:57",
+    "app_used": "Tally ERP",
+    "task_category": "bookkeeping",
+    "duration_minutes": "7",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-13T11:01:25",
+    "app_used": "slack",
+    "task_category": "Internal Communication",
+    "duration_minutes": "28",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-08 09:55:24",
+    "app_used": "gmail",
+    "task_category": "email triage",
+    "duration_minutes": "1",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "17/10/2025 16:41",
+    "app_used": "excel",
+    "task_category": "Reporting",
+    "duration_minutes": "31",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-24 09:27:53",
+    "app_used": "MS Outlook",
+    "task_category": "Calendar Mgmt",
+    "duration_minutes": "5",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-09 16:22:54",
+    "app_used": "SLACK",
+    "task_category": "internal comms",
+    "duration_minutes": "36",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-08T16:21:26",
+    "app_used": "SLACK",
+    "task_category": "status updates",
+    "duration_minutes": "8",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-13 13:55:58",
+    "app_used": "GMAIL",
+    "task_category": "internal comms",
+    "duration_minutes": "14",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-24 16:45:48",
+    "app_used": "SLACK",
+    "task_category": "Status Updates",
+    "duration_minutes": "21",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-10 10:27:00",
+    "app_used": "MS Outlook",
+    "task_category": "calendar management",
+    "duration_minutes": "17",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-09 10:43:43",
+    "app_used": "SLACK",
+    "task_category": "status updates",
+    "duration_minutes": "11",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-06 14:47:20",
+    "app_used": "Chrome",
+    "task_category": "Vendor Portals",
+    "duration_minutes": "27",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-09 15:23:05",
+    "app_used": "MS Excel",
+    "task_category": "Data Entry",
+    "duration_minutes": "29",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-21 16:38:09",
+    "app_used": "SLACK",
+    "task_category": "Status Updates",
+    "duration_minutes": "18",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-16 20:27:12",
+    "app_used": "Microsoft Word",
+    "task_category": "Document Drafting",
+    "duration_minutes": "46",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-15 09:57:41",
+    "app_used": "zoho",
+    "task_category": "CRM Updates",
+    "duration_minutes": "9",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "17/10/2025 12:06",
+    "app_used": "EXCEL",
+    "task_category": "REPORTING",
+    "duration_minutes": "47",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-06 12:05",
+    "app_used": "Notion",
+    "task_category": "documentation",
+    "duration_minutes": "15",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-07 12:43:13",
+    "app_used": "Google Chrome",
+    "task_category": "vendor portals",
+    "duration_minutes": "26",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-08 16:23",
+    "app_used": "MS Excel",
+    "task_category": "Data Entry",
+    "duration_minutes": "35",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-06 11:48:59",
+    "app_used": "Tally",
+    "task_category": "Bookkeeping",
+    "duration_minutes": "40",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-17 13:10:04",
+    "app_used": "sap",
+    "task_category": "invoice processing",
+    "duration_minutes": "29",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-16 07:05:18",
+    "app_used": "EXCEL",
+    "task_category": "data-entry",
+    "duration_minutes": "5",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-14 16:23:16",
+    "app_used": "Tally",
+    "task_category": "GST Prep",
+    "duration_minutes": "25",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-14T14:38:25",
+    "app_used": "chrome",
+    "task_category": "Research",
+    "duration_minutes": "28",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "24/10/2025 11:15",
+    "app_used": "Gmail",
+    "task_category": "client communication",
+    "duration_minutes": "9",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-16 18:30:37",
+    "app_used": "GMAIL",
+    "task_category": "client communication",
+    "duration_minutes": "10",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-22 12:19:50",
+    "app_used": "MS Excel",
+    "task_category": "DATA ENTRY",
+    "duration_minutes": "27",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "09/10/2025 17:42",
+    "app_used": "zoom",
+    "task_category": "meetings",
+    "duration_minutes": "9",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-15 09:13:30",
+    "app_used": "Slack",
+    "task_category": "Internal Communication",
+    "duration_minutes": "1",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-08 11:18:44",
+    "app_used": " Gmail ",
+    "task_category": "Email Triage",
+    "duration_minutes": "1",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-16 11:32:25",
+    "app_used": "ppt",
+    "task_category": "Slide Building",
+    "duration_minutes": "35",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-22T15:17:18",
+    "app_used": "Tally ERP",
+    "task_category": "GST Prep",
+    "duration_minutes": "7",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-21 10:50:38",
+    "app_used": "EXCEL",
+    "task_category": "Recon",
+    "duration_minutes": "13",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-20 17:26:38",
+    "app_used": "MS Outlook",
+    "task_category": "Email Triage",
+    "duration_minutes": "37",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "13/10/2025 14:10",
+    "app_used": "Sales Force",
+    "task_category": "Pipeline Review",
+    "duration_minutes": "1",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-16 13:07",
+    "app_used": "MS Excel",
+    "task_category": "data-entry",
+    "duration_minutes": "31",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-23 11:44:14",
+    "app_used": "Chrome",
+    "task_category": "Vendor Portals",
+    "duration_minutes": "37",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-21 17:26:16",
+    "app_used": "gmail",
+    "task_category": "Client Communication",
+    "duration_minutes": "9",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-21 16:26:23",
+    "app_used": "Slack",
+    "task_category": "Internal Communication",
+    "duration_minutes": "21",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-21 15:30",
+    "app_used": "Excel",
+    "task_category": "Reconciliation",
+    "duration_minutes": "21",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-20 10:14:39",
+    "app_used": "GMAIL",
+    "task_category": "Internal Communication",
+    "duration_minutes": "11",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "08/10/2025 12:42",
+    "app_used": "gmail",
+    "task_category": "client communication",
+    "duration_minutes": "42",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-20 13:36:42",
+    "app_used": " Gmail ",
+    "task_category": "Internal Comms",
+    "duration_minutes": "39",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-15 12:33:04",
+    "app_used": "SFDC",
+    "task_category": "Lead-Entry",
+    "duration_minutes": "19",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-09T16:46:55",
+    "app_used": "Outlook",
+    "task_category": "email triage",
+    "duration_minutes": "5",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-21 15:48:13",
+    "app_used": "zoho",
+    "task_category": "Lead-Entry",
+    "duration_minutes": "29",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-10T14:05:32",
+    "app_used": "excel",
+    "task_category": "Recon",
+    "duration_minutes": "4",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-20 14:42",
+    "app_used": "chrome",
+    "task_category": "research",
+    "duration_minutes": "27",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "10/10/2025 20:51",
+    "app_used": "MS Word",
+    "task_category": "NA",
+    "duration_minutes": "32",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-10T12:02:46",
+    "app_used": "GMAIL",
+    "task_category": "Client Comms",
+    "duration_minutes": "12",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-13 14:08",
+    "app_used": "Word",
+    "task_category": "doc drafting",
+    "duration_minutes": "5",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-17 17:19:08",
+    "app_used": "PowerPoint",
+    "task_category": "deck building",
+    "duration_minutes": "21",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-16 15:58:17",
+    "app_used": "tally",
+    "task_category": "GST Filing Prep",
+    "duration_minutes": "50",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-13 09:55:14",
+    "app_used": "Google Chrome",
+    "task_category": "Vendor Portals",
+    "duration_minutes": "20",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-14 14:42:59",
+    "app_used": " Gmail ",
+    "task_category": "EMAIL TRIAGE",
+    "duration_minutes": "19",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-22 11:45:47",
+    "app_used": "SLACK",
+    "task_category": "status updates",
+    "duration_minutes": "3",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-10 13:39:18",
+    "app_used": "MS Excel",
+    "task_category": "Reconciliation",
+    "duration_minutes": "5",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-09 13:10:23",
+    "app_used": "Microsoft Excel",
+    "task_category": "Recon",
+    "duration_minutes": "26",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-06 14:33:20",
+    "app_used": "SFDC",
+    "task_category": "Pipeline Review",
+    "duration_minutes": "20",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-13 11:43:38",
+    "app_used": "SLACK",
+    "task_category": "Status Updates",
+    "duration_minutes": "23",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-17 13:07:23",
+    "app_used": "MS Outlook",
+    "task_category": "EMAIL TRIAGE",
+    "duration_minutes": "46",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-24 14:36:46",
+    "app_used": "Microsoft Excel",
+    "task_category": "REPORTING",
+    "duration_minutes": "1",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-17 15:36:52",
+    "app_used": "Slack",
+    "task_category": "status updates",
+    "duration_minutes": "19",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-06 19:24:05",
+    "app_used": "GMAIL",
+    "task_category": "EMAIL TRIAGE",
+    "duration_minutes": "7",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "07/10/2025 16:17",
+    "app_used": "Notion",
+    "task_category": "notes",
+    "duration_minutes": "9",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-10 12:29:13",
+    "app_used": "GMAIL",
+    "task_category": "Internal Comms",
+    "duration_minutes": "6",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-15 12:08",
+    "app_used": "SAP",
+    "task_category": "Vendor Mgmt",
+    "duration_minutes": "43",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-24 13:32:09",
+    "app_used": "gmail",
+    "task_category": "email triage",
+    "duration_minutes": "25",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "10/10/2025 15:11",
+    "app_used": "Microsoft Excel",
+    "task_category": "Recon",
+    "duration_minutes": "16",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-22 17:55:42",
+    "app_used": "gmail",
+    "task_category": "Client Communication",
+    "duration_minutes": "14",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-21 14:05:04",
+    "app_used": "GMAIL",
+    "task_category": "Email Triage",
+    "duration_minutes": "30",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-14 10:20:53",
+    "app_used": "slack",
+    "task_category": "Internal Comms",
+    "duration_minutes": "28",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-14 16:10:08",
+    "app_used": " Gmail ",
+    "task_category": "Client Communication",
+    "duration_minutes": "41",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-24 14:32:06",
+    "app_used": "slack",
+    "task_category": "Status Updates",
+    "duration_minutes": "1",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-13 15:49:03",
+    "app_used": "Outlook",
+    "task_category": "Cal Mgmt",
+    "duration_minutes": "1",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-24 11:03:06",
+    "app_used": "Salesforce",
+    "task_category": "pipeline review",
+    "duration_minutes": "28",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "22/10/2025 12:40",
+    "app_used": "Google Chrome",
+    "task_category": "research",
+    "duration_minutes": "6",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "24/10/2025 19:00",
+    "app_used": "Slack",
+    "task_category": "status updates",
+    "duration_minutes": "10",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-16 15:06:55",
+    "app_used": "gmail",
+    "task_category": "Client Communication",
+    "duration_minutes": "27",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-09 19:50:30",
+    "app_used": "",
+    "task_category": "client communication",
+    "duration_minutes": "1",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-10 14:23",
+    "app_used": "Chrome",
+    "task_category": "Vendor Portals",
+    "duration_minutes": "29",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-22T11:20:10",
+    "app_used": "SAP",
+    "task_category": "Invoice Proc",
+    "duration_minutes": "1",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-22 16:48",
+    "app_used": " Gmail ",
+    "task_category": "Internal Comms",
+    "duration_minutes": "22",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-15 09:42:57",
+    "app_used": "gmail",
+    "task_category": "Email Triage",
+    "duration_minutes": "41",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "10/10/2025 19:08",
+    "app_used": "Microsoft Excel",
+    "task_category": "REPORTING",
+    "duration_minutes": "29",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "16/10/2025 08:39",
+    "app_used": "Slack",
+    "task_category": "status updates",
+    "duration_minutes": "22",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "16/10/2025 12:41",
+    "app_used": "EXCEL",
+    "task_category": "data-entry",
+    "duration_minutes": "1",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-08 14:52:55",
+    "app_used": "Word",
+    "task_category": "doc drafting",
+    "duration_minutes": "11",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-14 15:28:20",
+    "app_used": "Zoho",
+    "task_category": "lead entry",
+    "duration_minutes": "23",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-14 15:34:18",
+    "app_used": "Excel",
+    "task_category": "Recon",
+    "duration_minutes": "18",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-22T15:38:41",
+    "app_used": "MS Excel",
+    "task_category": "DATA ENTRY",
+    "duration_minutes": "13",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-06 15:35:10",
+    "app_used": "Microsoft Excel",
+    "task_category": "REPORTING",
+    "duration_minutes": "36",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-24 12:58",
+    "app_used": "Jira",
+    "task_category": "Status Updates",
+    "duration_minutes": "1",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-16 17:32:20",
+    "app_used": "MS Excel",
+    "task_category": "reporting",
+    "duration_minutes": "22",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "22/10/2025 07:02",
+    "app_used": "SLACK",
+    "task_category": "internal comms",
+    "duration_minutes": "25",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-20 12:44:56",
+    "app_used": "MS PowerPoint",
+    "task_category": "REPORTING",
+    "duration_minutes": "33",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-15 09:09:45",
+    "app_used": "GMAIL",
+    "task_category": "Client Communication",
+    "duration_minutes": "34",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-09 12:04:19",
+    "app_used": " Gmail ",
+    "task_category": "client communication",
+    "duration_minutes": "11",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-22 19:18:17",
+    "app_used": "gmail",
+    "task_category": "EMAIL TRIAGE",
+    "duration_minutes": "16",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-10 16:01:05",
+    "app_used": "Excel",
+    "task_category": "Recon",
+    "duration_minutes": "16",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-20 13:31:02",
+    "app_used": "zoho",
+    "task_category": "Lead-Entry",
+    "duration_minutes": "37",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-13 09:38:02",
+    "app_used": "outlook",
+    "task_category": "Cal Mgmt",
+    "duration_minutes": "1",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-22 11:40:29",
+    "app_used": "",
+    "task_category": "email triage",
+    "duration_minutes": "7",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-14 11:44:04",
+    "app_used": "sap",
+    "task_category": "Invoice Proc",
+    "duration_minutes": "35",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-09T10:49:40",
+    "app_used": "MS Excel",
+    "task_category": "data-entry",
+    "duration_minutes": "44",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "24/10/2025 11:11",
+    "app_used": "Zoho",
+    "task_category": "CRM Update",
+    "duration_minutes": "28",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-10 20:11:34",
+    "app_used": "GMAIL",
+    "task_category": "internal comms",
+    "duration_minutes": "4",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-13T14:40:14",
+    "app_used": "Outlook",
+    "task_category": "Email Triage",
+    "duration_minutes": "999",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-17T15:09:53",
+    "app_used": "SLACK",
+    "task_category": "Internal Comms",
+    "duration_minutes": "1",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-20 20:29",
+    "app_used": "SAP",
+    "task_category": "invoice processing",
+    "duration_minutes": "32",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-15 19:05:37",
+    "app_used": "PowerPoint",
+    "task_category": "REPORTING",
+    "duration_minutes": "31",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-15 09:57:50",
+    "app_used": "Zoho",
+    "task_category": "crm updates",
+    "duration_minutes": "13",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-21 19:03:49",
+    "app_used": "SAP",
+    "task_category": "vendor management",
+    "duration_minutes": "33",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-13 20:34:33",
+    "app_used": "chrome",
+    "task_category": "Vendor Portals",
+    "duration_minutes": "13",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-17 09:07:53",
+    "app_used": "SLACK",
+    "task_category": "Internal Comms",
+    "duration_minutes": "13",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-14 18:21:53",
+    "app_used": "Zoho CRM",
+    "task_category": "lead entry",
+    "duration_minutes": "27",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-16 12:46",
+    "app_used": "MS Excel",
+    "task_category": "Reporting",
+    "duration_minutes": "14",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-20T11:18:39",
+    "app_used": "Excel",
+    "task_category": "Reconciliation",
+    "duration_minutes": "1",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-09 15:09",
+    "app_used": "Gmail",
+    "task_category": "Internal Communication",
+    "duration_minutes": "28",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-21T16:34:02",
+    "app_used": "outlook",
+    "task_category": "email triage",
+    "duration_minutes": "39",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "21/10/2025 11:12",
+    "app_used": "Zoom",
+    "task_category": "Internal Meeting",
+    "duration_minutes": "14",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-20 14:53:17",
+    "app_used": "Zoom",
+    "task_category": "-",
+    "duration_minutes": "1",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-21 12:57:36",
+    "app_used": "GMAIL",
+    "task_category": "Internal Communication",
+    "duration_minutes": "22",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-21 19:43",
+    "app_used": "SLACK",
+    "task_category": "Status Updates",
+    "duration_minutes": "18",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-20 15:45:41",
+    "app_used": "ppt",
+    "task_category": "Slide Building",
+    "duration_minutes": "26",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-13 11:32:49",
+    "app_used": "SLACK",
+    "task_category": "internal comms",
+    "duration_minutes": "25",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-15T15:00:21",
+    "app_used": "Notion",
+    "task_category": "Docs",
+    "duration_minutes": "8",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-07 15:54:56",
+    "app_used": "SLACK",
+    "task_category": "internal comms",
+    "duration_minutes": "24",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-10 20:29:31",
+    "app_used": "MS PowerPoint",
+    "task_category": "reporting",
+    "duration_minutes": "31",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-23 07:48",
+    "app_used": "Zoho",
+    "task_category": "lead entry",
+    "duration_minutes": "17",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-06 18:43:46",
+    "app_used": "Gmail",
+    "task_category": "Client Comms",
+    "duration_minutes": "6",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "16/10/2025 15:05",
+    "app_used": "GMAIL",
+    "task_category": "Internal Comms",
+    "duration_minutes": "8",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-07 13:10",
+    "app_used": "Sales Force",
+    "task_category": "pipeline review",
+    "duration_minutes": "23",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-07T09:27:08",
+    "app_used": "zoho",
+    "task_category": "Lead Entry",
+    "duration_minutes": "20",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-17 18:58:51",
+    "app_used": "whatsapp web",
+    "task_category": "Client Communication",
+    "duration_minutes": "2",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-23 11:22:39",
+    "app_used": "slack",
+    "task_category": "Status Updates",
+    "duration_minutes": "12",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-15 15:58:26",
+    "app_used": "SLACK",
+    "task_category": "Internal Comms",
+    "duration_minutes": "13",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-21T10:57:39",
+    "app_used": "JIRA",
+    "task_category": "Status Updates",
+    "duration_minutes": "6",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-09 15:03:43",
+    "app_used": "Chrome",
+    "task_category": "research",
+    "duration_minutes": "18",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-14 16:03:48",
+    "app_used": "Chrome",
+    "task_category": "research",
+    "duration_minutes": "15",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-06T14:00:05",
+    "app_used": "excel",
+    "task_category": "Reporting",
+    "duration_minutes": "30",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-08T17:02:20",
+    "app_used": "Gmail",
+    "task_category": "email triage",
+    "duration_minutes": "17",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-14T16:45:51",
+    "app_used": "GMAIL",
+    "task_category": "Client Comms",
+    "duration_minutes": "27",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-16 14:48:06",
+    "app_used": "Gmail",
+    "task_category": "Internal Comms",
+    "duration_minutes": "4",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-15 15:26",
+    "app_used": "MS Word",
+    "task_category": "Document Drafting",
+    "duration_minutes": "37",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-13 16:50:31",
+    "app_used": "WhatsApp",
+    "task_category": "Client Comms",
+    "duration_minutes": "39",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-07 09:18:15",
+    "app_used": "outlook",
+    "task_category": "calendar management",
+    "duration_minutes": "21",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-06 11:21:13",
+    "app_used": "Google Chrome",
+    "task_category": "research",
+    "duration_minutes": "39",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-13 14:27",
+    "app_used": "MS Excel",
+    "task_category": "Reconciliation",
+    "duration_minutes": "10",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-23 11:42:30",
+    "app_used": "notion",
+    "task_category": "documentation",
+    "duration_minutes": "29",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "17/10/2025 16:38",
+    "app_used": "Microsoft Excel",
+    "task_category": "data entry",
+    "duration_minutes": "26",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-13 11:30:13",
+    "app_used": "Chrome",
+    "task_category": "research",
+    "duration_minutes": "27",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-17 18:57",
+    "app_used": "Excel",
+    "task_category": "data entry",
+    "duration_minutes": "18",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-14T13:26:38",
+    "app_used": "SAP",
+    "task_category": "vendor management",
+    "duration_minutes": "29",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-23 15:54:05",
+    "app_used": "Word",
+    "task_category": "Drafting",
+    "duration_minutes": "30",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-15 14:50",
+    "app_used": "MS Outlook",
+    "task_category": "email triage",
+    "duration_minutes": "22",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-24 15:03:05",
+    "app_used": "salesforce",
+    "task_category": "CRM Updates",
+    "duration_minutes": "12",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-16T17:39:14",
+    "app_used": "EXCEL",
+    "task_category": "Reconciliation",
+    "duration_minutes": "39",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-13 14:15:54",
+    "app_used": "Zoho",
+    "task_category": "lead entry",
+    "duration_minutes": "14",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-14 12:47:08",
+    "app_used": "SLACK",
+    "task_category": "Status Updates",
+    "duration_minutes": "46",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-14T13:40:20",
+    "app_used": "notion",
+    "task_category": "Docs",
+    "duration_minutes": "13",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-16 10:02:05",
+    "app_used": "Slack",
+    "task_category": "Internal Communication",
+    "duration_minutes": "34",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-15 11:24:49",
+    "app_used": "Outlook",
+    "task_category": "EMAIL TRIAGE",
+    "duration_minutes": "21",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "06/10/2025 15:26",
+    "app_used": "sap",
+    "task_category": "Invoice Proc",
+    "duration_minutes": "44",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-20 10:43:04",
+    "app_used": "gmail",
+    "task_category": "Internal Communication",
+    "duration_minutes": "1",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-10 18:55:39",
+    "app_used": " Gmail ",
+    "task_category": "Client Communication",
+    "duration_minutes": "31",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-22 14:37:16",
+    "app_used": "Slack",
+    "task_category": "internal comms",
+    "duration_minutes": "41",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-23 15:23:28",
+    "app_used": " Gmail ",
+    "task_category": "internal comms",
+    "duration_minutes": "21",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-21T17:46:42",
+    "app_used": "GMAIL",
+    "task_category": "Email Triage",
+    "duration_minutes": "4",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-06 13:27:11",
+    "app_used": "zoom",
+    "task_category": "meetings",
+    "duration_minutes": "29",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "06/10/2025 09:27",
+    "app_used": "Outlook",
+    "task_category": "Email Triage",
+    "duration_minutes": "24",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-08 12:32",
+    "app_used": "Chrome",
+    "task_category": "research",
+    "duration_minutes": "7",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-15 11:41:08",
+    "app_used": "SAP",
+    "task_category": "Invoice Processing",
+    "duration_minutes": "36",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-06 09:07:09",
+    "app_used": "Google Chrome",
+    "task_category": "Research",
+    "duration_minutes": "26",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-24 17:52:33",
+    "app_used": "Notion",
+    "task_category": "Notes",
+    "duration_minutes": "1",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-20 14:59:32",
+    "app_used": "Slack",
+    "task_category": "Internal Comms",
+    "duration_minutes": "7",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-07 12:50:20",
+    "app_used": "MS Word",
+    "task_category": "Drafting",
+    "duration_minutes": "1",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-16 15:59",
+    "app_used": "gmail",
+    "task_category": "internal comms",
+    "duration_minutes": "33",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-17 12:02:35",
+    "app_used": "Zoho CRM",
+    "task_category": "Lead Entry",
+    "duration_minutes": "19",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-07 18:26:16",
+    "app_used": "Tally",
+    "task_category": "bookkeeping",
+    "duration_minutes": "6",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-16 18:04:21",
+    "app_used": "salesforce",
+    "task_category": "crm updates",
+    "duration_minutes": "10",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "14/10/2025 15:47",
+    "app_used": "GMAIL",
+    "task_category": "email triage",
+    "duration_minutes": "18",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-24 09:29:56",
+    "app_used": "Zoho",
+    "task_category": "CRM Updates",
+    "duration_minutes": "54",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-22 09:53:08",
+    "app_used": "gmail",
+    "task_category": "Client Communication",
+    "duration_minutes": "1",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-14 13:27:41",
+    "app_used": "GMAIL",
+    "task_category": "Client Comms",
+    "duration_minutes": "15",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "15/10/2025 11:30",
+    "app_used": "slack",
+    "task_category": "Internal Communication",
+    "duration_minutes": "22",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-08 11:43:53",
+    "app_used": "Microsoft Word",
+    "task_category": "REPORTING",
+    "duration_minutes": "26",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-07 11:37:01",
+    "app_used": "chrome",
+    "task_category": "research",
+    "duration_minutes": "36",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "24/10/2025 15:45",
+    "app_used": "slack",
+    "task_category": "Internal Comms",
+    "duration_minutes": "6",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "24/10/2025 11:58",
+    "app_used": "Excel",
+    "task_category": "Data Entry",
+    "duration_minutes": "11",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "13/10/2025 11:22",
+    "app_used": "slack",
+    "task_category": "Status Updates",
+    "duration_minutes": "8",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-08 15:01:03",
+    "app_used": "zoho",
+    "task_category": "CRM Updates",
+    "duration_minutes": "46",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-24 12:05:27",
+    "app_used": "Powerpoint",
+    "task_category": "Reporting",
+    "duration_minutes": "23",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-07 15:53:34",
+    "app_used": "GMAIL",
+    "task_category": "Client Communication",
+    "duration_minutes": "4",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-22 12:08:57",
+    "app_used": "notion",
+    "task_category": "documentation",
+    "duration_minutes": "27",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-08 11:53",
+    "app_used": "tally",
+    "task_category": "gst filing prep",
+    "duration_minutes": "19",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-21 08:07:16",
+    "app_used": "Outlook",
+    "task_category": "calendar management",
+    "duration_minutes": "36",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-09 19:44:42",
+    "app_used": "outlook",
+    "task_category": "Email Triage",
+    "duration_minutes": "10",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-06T10:02:53",
+    "app_used": "outlook",
+    "task_category": "Cal Mgmt",
+    "duration_minutes": "13",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-10 13:56:53",
+    "app_used": "Microsoft Word",
+    "task_category": "REPORTING",
+    "duration_minutes": "30",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-13 09:59",
+    "app_used": "Gmail",
+    "task_category": "client communication",
+    "duration_minutes": "16",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-21 12:57:49",
+    "app_used": "sap",
+    "task_category": "Vendor Mgmt",
+    "duration_minutes": "1",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-23 17:34:08",
+    "app_used": "chrome",
+    "task_category": "vendor portals",
+    "duration_minutes": "34",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-23 18:39:55",
+    "app_used": "WhatsApp Web",
+    "task_category": "Client Comms",
+    "duration_minutes": "1",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-07 12:33:59",
+    "app_used": "gmail",
+    "task_category": "internal comms",
+    "duration_minutes": "1",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-08 17:44",
+    "app_used": " Gmail ",
+    "task_category": "Client Communication",
+    "duration_minutes": "7",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-23 09:29:22",
+    "app_used": "ppt",
+    "task_category": "Reporting",
+    "duration_minutes": "35",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-10 17:34:18",
+    "app_used": "MS Outlook",
+    "task_category": "calendar management",
+    "duration_minutes": "1",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-14 14:52:22",
+    "app_used": "chrome",
+    "task_category": "research",
+    "duration_minutes": "25",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-09 09:45:41",
+    "app_used": "MS PowerPoint",
+    "task_category": "Reporting",
+    "duration_minutes": "37",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-14 10:25:20",
+    "app_used": "zoho",
+    "task_category": "CRM Update",
+    "duration_minutes": "13",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-24 17:03:00",
+    "app_used": "SLACK",
+    "task_category": "Internal Comms",
+    "duration_minutes": "5",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-14 11:58:05",
+    "app_used": "Word",
+    "task_category": "REPORTING",
+    "duration_minutes": "44",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-10 19:31:44",
+    "app_used": "outlook",
+    "task_category": "calendar management",
+    "duration_minutes": "39",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-24T16:56:20",
+    "app_used": "Powerpoint",
+    "task_category": "deck building",
+    "duration_minutes": "23",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-16 16:49:43",
+    "app_used": "Gmail",
+    "task_category": "internal comms",
+    "duration_minutes": "14",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "07/10/2025 16:38",
+    "app_used": "Excel",
+    "task_category": "Recon",
+    "duration_minutes": "12",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-08 10:34:56",
+    "app_used": "slack",
+    "task_category": "Internal Comms",
+    "duration_minutes": "30",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-15 16:14:08",
+    "app_used": "Outlook",
+    "task_category": "email triage",
+    "duration_minutes": "65",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-13 12:32:59",
+    "app_used": "GMAIL",
+    "task_category": "Client Comms",
+    "duration_minutes": "18",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-07 12:03:16",
+    "app_used": "jira",
+    "task_category": "Status Updates",
+    "duration_minutes": "21",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-23 10:50:11",
+    "app_used": "EXCEL",
+    "task_category": "reconciliation",
+    "duration_minutes": "1",
+    "is_repetitive": "-"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-07 16:42:33",
+    "app_used": "Google Chrome",
+    "task_category": "vendor portals",
+    "duration_minutes": "30",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "07/10/2025 13:48",
+    "app_used": " Gmail ",
+    "task_category": "EMAIL TRIAGE",
+    "duration_minutes": "34",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-07T12:35:33",
+    "app_used": "Microsoft Excel",
+    "task_category": "data-entry",
+    "duration_minutes": "15",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-20 14:34:35",
+    "app_used": "Slack",
+    "task_category": "internal comms",
+    "duration_minutes": "28",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "16/10/2025 16:36",
+    "app_used": "Microsoft Word",
+    "task_category": "Reporting",
+    "duration_minutes": "30",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-09 15:51:08",
+    "app_used": "EXCEL",
+    "task_category": "Data Entry",
+    "duration_minutes": "6",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-23 19:39:17",
+    "app_used": "MS Outlook",
+    "task_category": "EMAIL TRIAGE",
+    "duration_minutes": "46",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-22 11:19:00",
+    "app_used": "Gmail",
+    "task_category": "EMAIL TRIAGE",
+    "duration_minutes": "11",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-06 11:00:21",
+    "app_used": "Zoho",
+    "task_category": "CRM Update",
+    "duration_minutes": "4",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-07 10:13:04",
+    "app_used": "slack",
+    "task_category": "internal comms",
+    "duration_minutes": "1",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-16 14:54:17",
+    "app_used": "Tally ERP",
+    "task_category": "bookkeeping",
+    "duration_minutes": "15",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-06T10:48:10",
+    "app_used": "EXCEL",
+    "task_category": "Data Entry",
+    "duration_minutes": "28",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-06 15:56:36",
+    "app_used": " Gmail ",
+    "task_category": "Internal Communication",
+    "duration_minutes": "14",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-08T13:44:19",
+    "app_used": "Sales Force",
+    "task_category": "Pipeline Review",
+    "duration_minutes": "10",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-09T13:29:37",
+    "app_used": "Gmail",
+    "task_category": "client communication",
+    "duration_minutes": "46",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-24 12:39:15",
+    "app_used": "Zoho CRM",
+    "task_category": "Lead Entry",
+    "duration_minutes": "23",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-09 17:03:18",
+    "app_used": "Zoho CRM",
+    "task_category": "crm updates",
+    "duration_minutes": "1",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-13 13:24",
+    "app_used": "excel",
+    "task_category": "data-entry",
+    "duration_minutes": "35",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-22 14:31:49",
+    "app_used": "gmail",
+    "task_category": "Client Comms",
+    "duration_minutes": "999",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-17T12:07:06",
+    "app_used": "Excel",
+    "task_category": "Data Entry",
+    "duration_minutes": "40",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-07 18:02:48",
+    "app_used": "Word",
+    "task_category": "Reporting",
+    "duration_minutes": "23",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-15 18:08",
+    "app_used": "EXCEL",
+    "task_category": "reconciliation",
+    "duration_minutes": "4",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-22 13:56:53",
+    "app_used": "Salesforce",
+    "task_category": "crm updates",
+    "duration_minutes": "24",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-13T15:25:58",
+    "app_used": "Word",
+    "task_category": "Drafting",
+    "duration_minutes": "19",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "21/10/2025 12:58",
+    "app_used": "Excel",
+    "task_category": "Reporting",
+    "duration_minutes": "22",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-24 12:24:27",
+    "app_used": "Microsoft Word",
+    "task_category": "Document Drafting",
+    "duration_minutes": "22",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "06/10/2025 19:54",
+    "app_used": "Excel",
+    "task_category": "reconciliation",
+    "duration_minutes": "22",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-20 15:12:17",
+    "app_used": "gmail",
+    "task_category": "client communication",
+    "duration_minutes": "26",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-06 15:44:59",
+    "app_used": "SLACK",
+    "task_category": "Status Updates",
+    "duration_minutes": "25",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-15 16:12:46",
+    "app_used": "salesforce",
+    "task_category": "Pipeline Review",
+    "duration_minutes": "7",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-10 12:36:04",
+    "app_used": "Chrome",
+    "task_category": "vendor portals",
+    "duration_minutes": "1",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "22/10/2025 11:49",
+    "app_used": "Notion",
+    "task_category": "Docs",
+    "duration_minutes": "32",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-17 13:36",
+    "app_used": " Gmail ",
+    "task_category": "Email Triage",
+    "duration_minutes": "17",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "17/10/2025 10:46",
+    "app_used": "Gmail",
+    "task_category": "internal comms",
+    "duration_minutes": "17",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-10 14:52:39",
+    "app_used": "SLACK",
+    "task_category": "Internal Comms",
+    "duration_minutes": "11",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "15/10/2025 15:54",
+    "app_used": "MS Outlook",
+    "task_category": "email triage",
+    "duration_minutes": "1",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-08 11:34:08",
+    "app_used": "MS Word",
+    "task_category": "reporting",
+    "duration_minutes": "38",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-24 14:40:13",
+    "app_used": "Notion",
+    "task_category": "Notes",
+    "duration_minutes": "20",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-17 10:53:01",
+    "app_used": "WhatsApp",
+    "task_category": "Internal Comms",
+    "duration_minutes": "22",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-09 12:21:49",
+    "app_used": "Slack",
+    "task_category": "Internal Communication",
+    "duration_minutes": "18",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-17 10:44:43",
+    "app_used": "Gmail",
+    "task_category": "email triage",
+    "duration_minutes": "1",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "14/10/2025 14:40",
+    "app_used": "Slack",
+    "task_category": "Status Updates",
+    "duration_minutes": "1",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-13 14:46:14",
+    "app_used": "Chrome",
+    "task_category": "Research",
+    "duration_minutes": "12",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-16 10:08",
+    "app_used": "excel",
+    "task_category": "reporting",
+    "duration_minutes": "1",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "17/10/2025 12:37",
+    "app_used": "outlook",
+    "task_category": "Calendar Mgmt",
+    "duration_minutes": "1",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-09 10:23:58",
+    "app_used": "zoho",
+    "task_category": "crm updates",
+    "duration_minutes": "20",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-07 15:51:25",
+    "app_used": "gmail",
+    "task_category": "email triage",
+    "duration_minutes": "8",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-09 12:43:46",
+    "app_used": "excel",
+    "task_category": "reconciliation",
+    "duration_minutes": "23",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-09 10:38:08",
+    "app_used": "GMAIL",
+    "task_category": "Client Communication",
+    "duration_minutes": "23",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "10/10/2025 15:48",
+    "app_used": "sap",
+    "task_category": "Invoice Processing",
+    "duration_minutes": "17",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-09 10:05:48",
+    "app_used": "ppt",
+    "task_category": "deck building",
+    "duration_minutes": "2",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-17T13:54:10",
+    "app_used": "Zoho CRM",
+    "task_category": "Lead-Entry",
+    "duration_minutes": "35",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-16 10:02:16",
+    "app_used": " Gmail ",
+    "task_category": "email triage",
+    "duration_minutes": "10",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-14 15:36",
+    "app_used": "slack",
+    "task_category": "Internal Communication",
+    "duration_minutes": "18",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "13/10/2025 15:31",
+    "app_used": "MS Word",
+    "task_category": "reporting",
+    "duration_minutes": "1",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-22 12:26:44",
+    "app_used": "slack",
+    "task_category": "internal comms",
+    "duration_minutes": "15",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-22 12:34:30",
+    "app_used": "Notion",
+    "task_category": "Notes",
+    "duration_minutes": "41",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "07/10/2025 18:26",
+    "app_used": "Microsoft Word",
+    "task_category": "REPORTING",
+    "duration_minutes": "35",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-06 07:24:16",
+    "app_used": " Gmail ",
+    "task_category": "client communication",
+    "duration_minutes": "1",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-21 11:24:08",
+    "app_used": "Slack",
+    "task_category": "Internal Communication",
+    "duration_minutes": "17",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-22 15:21:59",
+    "app_used": "Gmail",
+    "task_category": "Email Triage",
+    "duration_minutes": "30",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "10/10/2025 16:40",
+    "app_used": "gmail",
+    "task_category": "Internal Communication",
+    "duration_minutes": "34",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "17/10/2025 16:12",
+    "app_used": "MS Excel",
+    "task_category": "DATA ENTRY",
+    "duration_minutes": "40",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-13 16:57:32",
+    "app_used": "Zoho",
+    "task_category": "CRM Update",
+    "duration_minutes": "1",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-14 14:10",
+    "app_used": "MS Excel",
+    "task_category": "Reconciliation",
+    "duration_minutes": "22",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-10 12:41:11",
+    "app_used": " Gmail ",
+    "task_category": "Client Comms",
+    "duration_minutes": "1",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-06 15:14",
+    "app_used": "GMAIL",
+    "task_category": "Internal Communication",
+    "duration_minutes": "20",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-14 10:52:45",
+    "app_used": "jira",
+    "task_category": "Ticket Updates",
+    "duration_minutes": "32",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-15 10:20",
+    "app_used": "Gmail",
+    "task_category": "internal comms",
+    "duration_minutes": "19",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-22 16:51:18",
+    "app_used": "Zoho CRM",
+    "task_category": "CRM Updates",
+    "duration_minutes": "13",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "09/10/2025 10:08",
+    "app_used": "Slack",
+    "task_category": "status updates",
+    "duration_minutes": "6",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-23 09:24",
+    "app_used": "Gmail",
+    "task_category": "Email Triage",
+    "duration_minutes": "28",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "13/10/2025 13:58",
+    "app_used": "outlook",
+    "task_category": "calendar management",
+    "duration_minutes": "24",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-24 12:25:46",
+    "app_used": "Gmail",
+    "task_category": "Client Communication",
+    "duration_minutes": "14",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-17 11:14:29",
+    "app_used": "MS Word",
+    "task_category": "doc drafting",
+    "duration_minutes": "4",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "13/10/2025 15:38",
+    "app_used": "Word",
+    "task_category": "REPORTING",
+    "duration_minutes": "21",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-09 07:19:13",
+    "app_used": "Slack",
+    "task_category": "internal comms",
+    "duration_minutes": "25",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-15 14:19:42",
+    "app_used": "Google Chrome",
+    "task_category": "Research",
+    "duration_minutes": "25",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-22 16:08:46",
+    "app_used": "Notion",
+    "task_category": "notes",
+    "duration_minutes": "19",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "20/10/2025 12:52",
+    "app_used": "gmail",
+    "task_category": "Email Triage",
+    "duration_minutes": "27",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-23 16:41",
+    "app_used": "Google Chrome",
+    "task_category": "Research",
+    "duration_minutes": "25",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-10 12:36:02",
+    "app_used": "MS Outlook",
+    "task_category": "Calendar Mgmt",
+    "duration_minutes": "25",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "14/10/2025 11:48",
+    "app_used": "PowerPoint",
+    "task_category": "REPORTING",
+    "duration_minutes": "27",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "13/10/2025 11:56",
+    "app_used": "gmail",
+    "task_category": "internal comms",
+    "duration_minutes": "2",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-14 19:43:41",
+    "app_used": "zoho",
+    "task_category": "crm updates",
+    "duration_minutes": "12",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-21 11:37:06",
+    "app_used": "MS Word",
+    "task_category": "reporting",
+    "duration_minutes": "17",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-23 13:38:30",
+    "app_used": "sap",
+    "task_category": "Invoice Processing",
+    "duration_minutes": "14",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "07/10/2025 16:05",
+    "app_used": "MS Excel",
+    "task_category": "Reconciliation",
+    "duration_minutes": "4",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-21 15:35:58",
+    "app_used": "sap",
+    "task_category": "invoice processing",
+    "duration_minutes": "36",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "20/10/2025 16:18",
+    "app_used": "gmail",
+    "task_category": "client communication",
+    "duration_minutes": "25",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-09 12:49:39",
+    "app_used": "salesforce",
+    "task_category": "pipeline review",
+    "duration_minutes": "54",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-17 15:27",
+    "app_used": "Sales Force",
+    "task_category": "crm updates",
+    "duration_minutes": "19",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-06 16:33",
+    "app_used": "EXCEL",
+    "task_category": "reconciliation",
+    "duration_minutes": "24",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "13/10/2025 15:44",
+    "app_used": "Chrome",
+    "task_category": "vendor portals",
+    "duration_minutes": "1",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-06 18:43:46",
+    "app_used": "Gmail",
+    "task_category": "Client Comms",
+    "duration_minutes": "6",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "16/10/2025 11:51",
+    "app_used": "GMAIL",
+    "task_category": "EMAIL TRIAGE",
+    "duration_minutes": "6",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-09 15:28:04",
+    "app_used": "Chrome",
+    "task_category": "vendor portals",
+    "duration_minutes": "23",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-24T11:33:36",
+    "app_used": "GMAIL",
+    "task_category": "Internal Communication",
+    "duration_minutes": "9",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-16 16:49:13",
+    "app_used": "excel",
+    "task_category": "Recon",
+    "duration_minutes": "23",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-20 12:28:06",
+    "app_used": "MS Outlook",
+    "task_category": "Cal Mgmt",
+    "duration_minutes": "2",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-14 12:11:43",
+    "app_used": "Google Chrome",
+    "task_category": "vendor portals",
+    "duration_minutes": "26",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-17 16:36:48",
+    "app_used": "Slack",
+    "task_category": "internal comms",
+    "duration_minutes": "17",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-09 17:36",
+    "app_used": " Gmail ",
+    "task_category": "Client Comms",
+    "duration_minutes": "10",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-13 17:28:51",
+    "app_used": "Excel",
+    "task_category": "reconciliation",
+    "duration_minutes": "1",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-21T16:37:25",
+    "app_used": "Notion",
+    "task_category": "Documentation",
+    "duration_minutes": "15",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-13 11:32:56",
+    "app_used": "outlook",
+    "task_category": "calendar management",
+    "duration_minutes": "1",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-20T14:18:48",
+    "app_used": "whatsapp web",
+    "task_category": "client communication",
+    "duration_minutes": "21",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "15/10/2025 14:34",
+    "app_used": "SAP",
+    "task_category": "invoice processing",
+    "duration_minutes": "14",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-21 12:55:43",
+    "app_used": "gmail",
+    "task_category": "email triage",
+    "duration_minutes": "4",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-08 10:35:00",
+    "app_used": "Powerpoint",
+    "task_category": "Reporting",
+    "duration_minutes": "49",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-07 11:37:01",
+    "app_used": "chrome",
+    "task_category": "research",
+    "duration_minutes": "36",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "16/10/2025 09:45",
+    "app_used": "GMAIL",
+    "task_category": "email triage",
+    "duration_minutes": "23",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-08 12:17:11",
+    "app_used": " Gmail ",
+    "task_category": "Client Comms",
+    "duration_minutes": "1",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "07/10/2025 16:06",
+    "app_used": "MS Excel",
+    "task_category": "Reconciliation",
+    "duration_minutes": "17",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-13 12:53:32",
+    "app_used": "Sales Force",
+    "task_category": "pipeline review",
+    "duration_minutes": "25",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-06 14:14:04",
+    "app_used": "-",
+    "task_category": "DATA ENTRY",
+    "duration_minutes": "10",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-22 13:55:34",
+    "app_used": "Microsoft Excel",
+    "task_category": "REPORTING",
+    "duration_minutes": "1",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-15 15:05:40",
+    "app_used": "Google Chrome",
+    "task_category": "Vendor Portals",
+    "duration_minutes": "1",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "21/10/2025 16:24",
+    "app_used": "WhatsApp Web",
+    "task_category": "Internal Comms",
+    "duration_minutes": "20",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-08 16:14",
+    "app_used": "jira",
+    "task_category": "Ticket Updates",
+    "duration_minutes": "40",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-23 10:29:35",
+    "app_used": "Google Chrome",
+    "task_category": "Research",
+    "duration_minutes": "34",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "09/10/2025 13:53",
+    "app_used": "SFDC",
+    "task_category": "Lead Entry",
+    "duration_minutes": "19",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "17/10/2025 09:28",
+    "app_used": "Powerpoint",
+    "task_category": "Deck Building",
+    "duration_minutes": "1",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-21 12:55:22",
+    "app_used": "zoho",
+    "task_category": "crm updates",
+    "duration_minutes": "5",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "23/10/2025 10:29",
+    "app_used": "SFDC",
+    "task_category": "lead entry",
+    "duration_minutes": "29",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-22 10:42:15",
+    "app_used": "gmail",
+    "task_category": "Internal Comms",
+    "duration_minutes": "1",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-21 11:22:49",
+    "app_used": "Sales Force",
+    "task_category": "Pipeline Review",
+    "duration_minutes": "7",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "13/10/2025 15:45",
+    "app_used": "Zoho",
+    "task_category": "CRM Update",
+    "duration_minutes": "17",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-14 11:24:00",
+    "app_used": "slack",
+    "task_category": "internal comms",
+    "duration_minutes": "33",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-17 10:55",
+    "app_used": "gmail",
+    "task_category": "Internal Communication",
+    "duration_minutes": "21",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-08 12:03:13",
+    "app_used": "Microsoft Excel",
+    "task_category": "REPORTING",
+    "duration_minutes": "23",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-20 18:39:33",
+    "app_used": "Sales Force",
+    "task_category": "CRM Update",
+    "duration_minutes": "36",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-16 15:08:11",
+    "app_used": "Google Chrome",
+    "task_category": "Vendor Portals",
+    "duration_minutes": "23",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-08 07:51:29",
+    "app_used": "Microsoft Excel",
+    "task_category": "Recon",
+    "duration_minutes": "16",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-16 14:59:46",
+    "app_used": "EXCEL",
+    "task_category": "DATA ENTRY",
+    "duration_minutes": "57",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-07 12:54:26",
+    "app_used": " Gmail ",
+    "task_category": "Internal Communication",
+    "duration_minutes": "1",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-20T17:15:02",
+    "app_used": "sap",
+    "task_category": "vendor management",
+    "duration_minutes": "5",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "?",
+    "department": "Marketing",
+    "timestamp": "2025-10-06 17:36:56",
+    "app_used": "Google Chrome",
+    "task_category": "vendor portals",
+    "duration_minutes": "36",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-09T09:06:35",
+    "app_used": "MS Outlook",
+    "task_category": "email triage",
+    "duration_minutes": "36",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-22 13:03",
+    "app_used": "MS Excel",
+    "task_category": "Data Entry",
+    "duration_minutes": "1",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "09/10/2025 18:26",
+    "app_used": "slack",
+    "task_category": "status updates",
+    "duration_minutes": "47",
+    "is_repetitive": "-"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-10 11:03:15",
+    "app_used": "jira",
+    "task_category": "status updates",
+    "duration_minutes": "12",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-16 13:36:43",
+    "app_used": "gmail",
+    "task_category": "Internal Communication",
+    "duration_minutes": "25",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-08 16:19:05",
+    "app_used": "salesforce",
+    "task_category": "Pipeline Review",
+    "duration_minutes": "21",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-09 09:06:51",
+    "app_used": "GMAIL",
+    "task_category": "Internal Comms",
+    "duration_minutes": "33",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-10 07:05:01",
+    "app_used": "MS Word",
+    "task_category": "Reporting",
+    "duration_minutes": "17",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-23 15:09:10",
+    "app_used": "salesforce",
+    "task_category": "CRM Updates",
+    "duration_minutes": "30",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-22 11:32:31",
+    "app_used": "Zoho CRM",
+    "task_category": "crm updates",
+    "duration_minutes": "34",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-07 15:11:39",
+    "app_used": "GMAIL",
+    "task_category": "client communication",
+    "duration_minutes": "4",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-15 10:54:31",
+    "app_used": "chrome",
+    "task_category": "Research",
+    "duration_minutes": "6",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-07 14:18",
+    "app_used": "gmail",
+    "task_category": "email triage",
+    "duration_minutes": "23",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-07 17:36:12",
+    "app_used": "MS Excel",
+    "task_category": "data-entry",
+    "duration_minutes": "40",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-14 15:26:43",
+    "app_used": "Powerpoint",
+    "task_category": "deck building",
+    "duration_minutes": "10",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-10 16:22:15",
+    "app_used": "WhatsApp Web",
+    "task_category": "Client Comms",
+    "duration_minutes": "1",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "06/10/2025 16:19",
+    "app_used": "Gmail",
+    "task_category": "Email Triage",
+    "duration_minutes": "10",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "24/10/2025 15:13",
+    "app_used": "gmail",
+    "task_category": "Client Communication",
+    "duration_minutes": "999",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E015",
+    "department": "Marketing",
+    "timestamp": "2025-10-24T13:18:24",
+    "app_used": " Gmail ",
+    "task_category": "Email Triage",
+    "duration_minutes": "1",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "21/10/2025 14:43",
+    "app_used": "Outlook",
+    "task_category": "Email Triage",
+    "duration_minutes": "34",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "10/10/2025 10:22",
+    "app_used": "Slack",
+    "task_category": "status updates",
+    "duration_minutes": "30",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-17T14:26:03",
+    "app_used": "Word",
+    "task_category": "Document Drafting",
+    "duration_minutes": "10",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-06 17:56",
+    "app_used": "chrome",
+    "task_category": "research",
+    "duration_minutes": "29",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-16 10:12:41",
+    "app_used": "WhatsApp Web",
+    "task_category": "Internal Communication",
+    "duration_minutes": "29",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-08T17:14:47",
+    "app_used": "Slack",
+    "task_category": "status updates",
+    "duration_minutes": "22",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "16/10/2025 16:14",
+    "app_used": "MS Excel",
+    "task_category": "reconciliation",
+    "duration_minutes": "21",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-14T10:42:27",
+    "app_used": " Gmail ",
+    "task_category": "Internal Communication",
+    "duration_minutes": "",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-16 11:52:26",
+    "app_used": "Microsoft Word",
+    "task_category": "reporting",
+    "duration_minutes": "18",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "06/10/2025 16:55",
+    "app_used": "GMAIL",
+    "task_category": "Email Triage",
+    "duration_minutes": "17",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-09T11:08:42",
+    "app_used": "Google Chrome",
+    "task_category": "Vendor Portals",
+    "duration_minutes": "37",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E009",
+    "department": "Customer Support",
+    "timestamp": "2025-10-15 13:47:35",
+    "app_used": "gmail",
+    "task_category": "Client Communication",
+    "duration_minutes": "17",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-21 13:17:13",
+    "app_used": "Slack",
+    "task_category": "Internal Communication",
+    "duration_minutes": "18",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-20 15:59:24",
+    "app_used": "Powerpoint",
+    "task_category": "reporting",
+    "duration_minutes": "22",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-10 12:41:17",
+    "app_used": "Zoho",
+    "task_category": "CRM Updates",
+    "duration_minutes": "21",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-20 11:04:36",
+    "app_used": "Outlook",
+    "task_category": "email triage",
+    "duration_minutes": "47",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-16 10:00:03",
+    "app_used": "MS Excel",
+    "task_category": "reconciliation",
+    "duration_minutes": "62",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-23 17:38:41",
+    "app_used": "outlook",
+    "task_category": "Calendar Mgmt",
+    "duration_minutes": "33",
+    "is_repetitive": "No"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "17/10/2025 14:47",
+    "app_used": "gmail",
+    "task_category": "Client Comms",
+    "duration_minutes": "1",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-06 15:43:41",
+    "app_used": "MS Outlook",
+    "task_category": "Email Triage",
+    "duration_minutes": "33",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-08T15:54:21",
+    "app_used": "ZOOM",
+    "task_category": "Client Call",
+    "duration_minutes": "1",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-10 09:12:56",
+    "app_used": "Gmail",
+    "task_category": "email triage",
+    "duration_minutes": "43",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "16/10/2025 12:40",
+    "app_used": "Zoho CRM",
+    "task_category": "crm updates",
+    "duration_minutes": "7",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "17/10/2025 12:28",
+    "app_used": "Gmail",
+    "task_category": "Internal Comms",
+    "duration_minutes": "1",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-22T16:46:17",
+    "app_used": "SAP",
+    "task_category": "Invoice Proc",
+    "duration_minutes": "57",
+    "is_repetitive": "no"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-17 12:02",
+    "app_used": "SAP",
+    "task_category": "vendor management",
+    "duration_minutes": "24",
+    "is_repetitive": "TRUE"
+  },
+  {
+    "employee_id": "E005",
+    "department": "Finance",
+    "timestamp": "2025-10-24 16:19:13",
+    "app_used": "Tally ERP",
+    "task_category": "gst filing prep",
+    "duration_minutes": "13",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-22T14:46:04",
+    "app_used": "GMAIL",
+    "task_category": "Client Communication",
+    "duration_minutes": "31",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-23T10:28:30",
+    "app_used": "Word",
+    "task_category": "doc drafting",
+    "duration_minutes": "38",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-06 13:46:56",
+    "app_used": "MS Outlook",
+    "task_category": "calendar management",
+    "duration_minutes": "10",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-17 14:56:46",
+    "app_used": "Zoho",
+    "task_category": "lead entry",
+    "duration_minutes": "1",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-07 13:16",
+    "app_used": "chrome",
+    "task_category": "Research",
+    "duration_minutes": "21",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-16 15:36:38",
+    "app_used": "outlook",
+    "task_category": "Calendar Mgmt",
+    "duration_minutes": "17",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "2025-10-08T10:59:45",
+    "app_used": "Microsoft Excel",
+    "task_category": "REPORTING",
+    "duration_minutes": "47",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E011",
+    "department": "Customer Support",
+    "timestamp": "2025-10-23 11:56:41",
+    "app_used": " Gmail ",
+    "task_category": "Internal Communication",
+    "duration_minutes": "25",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-15T11:55:02",
+    "app_used": "chrome",
+    "task_category": "research",
+    "duration_minutes": "17",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E003",
+    "department": "Operations",
+    "timestamp": "2025-10-08T13:19:12",
+    "app_used": "MS Excel",
+    "task_category": "reporting",
+    "duration_minutes": "32",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E007",
+    "department": "Sales",
+    "timestamp": "2025-10-08 13:56",
+    "app_used": "Excel",
+    "task_category": "reporting",
+    "duration_minutes": "20",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-23T16:30:35",
+    "app_used": "excel",
+    "task_category": "reporting",
+    "duration_minutes": "18",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-15 13:54:07",
+    "app_used": "Gmail",
+    "task_category": "Client Communication",
+    "duration_minutes": "30",
+    "is_repetitive": "0"
+  },
+  {
+    "employee_id": "E010",
+    "department": "Customer Support",
+    "timestamp": "2025-10-10 18:34:32",
+    "app_used": "SLACK",
+    "task_category": "Internal Comms",
+    "duration_minutes": "18",
+    "is_repetitive": "FALSE"
+  },
+  {
+    "employee_id": "E006",
+    "department": "Sales",
+    "timestamp": "2025-10-08 11:37:37",
+    "app_used": "WhatsApp Web",
+    "task_category": "internal comms",
+    "duration_minutes": "38",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E008",
+    "department": "Sales",
+    "timestamp": "2025-10-23 16:00:59",
+    "app_used": "GMAIL",
+    "task_category": "email triage",
+    "duration_minutes": "6",
+    "is_repetitive": "true"
+  },
+  {
+    "employee_id": "E001",
+    "department": "Operations",
+    "timestamp": "2025-10-09 12:11",
+    "app_used": "excel",
+    "task_category": "Recon",
+    "duration_minutes": "1",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E013",
+    "department": "HR",
+    "timestamp": "2025-10-20 09:32:10",
+    "app_used": " Gmail ",
+    "task_category": "Internal Comms",
+    "duration_minutes": "30",
+    "is_repetitive": "Yes"
+  },
+  {
+    "employee_id": "E012",
+    "department": "HR",
+    "timestamp": "2025-10-23 17:31",
+    "app_used": "GMAIL",
+    "task_category": "email triage",
+    "duration_minutes": "20",
+    "is_repetitive": "false"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-07 13:42",
+    "app_used": "MS Word",
+    "task_category": "reporting",
+    "duration_minutes": "4",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E014",
+    "department": "Marketing",
+    "timestamp": "07/10/2025 11:01",
+    "app_used": "Notion",
+    "task_category": "documentation",
+    "duration_minutes": "26",
+    "is_repetitive": "1"
+  },
+  {
+    "employee_id": "E002",
+    "department": "Operations",
+    "timestamp": "2025-10-20 10:54:16",
+    "app_used": "Gmail",
+    "task_category": "client communication",
+    "duration_minutes": "4",
+    "is_repetitive": "yes"
+  },
+  {
+    "employee_id": "E004",
+    "department": "Finance",
+    "timestamp": "2025-10-21 13:35:04",
+    "app_used": "MS Outlook",
+    "task_category": "email triage",
+    "duration_minutes": "5",
+    "is_repetitive": "1"
+  }
+]

@@ -17,7 +17,7 @@ export function KPICard({ label, value, subtitle, methodology }: KPICardProps) {
 
   return (
     <>
-      <article className="relative overflow-hidden rounded-2xl border border-border/70 bg-card p-4 shadow-dashboard-panel transition hover:border-white/15 hover:bg-card/95 sm:p-5">
+      <article className="relative min-w-0 overflow-hidden rounded-2xl border border-border/70 bg-card p-4 shadow-dashboard-panel transition hover:border-white/15 hover:bg-card/95 sm:p-5">
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0 flex-1">
             <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground sm:text-xs">

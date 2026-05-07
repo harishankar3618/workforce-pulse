@@ -22,7 +22,7 @@ export function DataQualityReport({ quality }: DataQualityReportProps) {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="rounded-2xl border border-border/70 bg-card p-3 shadow-dashboard-panel sm:p-4 md:p-5">
+    <section className="min-w-0 rounded-2xl border border-border/70 bg-card p-3 shadow-dashboard-panel sm:p-4 md:p-5">
       <button
         type="button"
         onClick={() => setOpen((value) => !value)}

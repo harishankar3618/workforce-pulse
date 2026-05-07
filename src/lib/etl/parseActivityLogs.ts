@@ -1,9 +1,4 @@
-import { readFile } from "node:fs/promises";
-import path from "node:path";
-
-import Papa from "papaparse";
-
-import { DATA_SOURCE } from "../constants.ts";
+import activityLogs from "@/data/activity_logs.json";
 import {
   canonicalizeApp,
   canonicalizeDepartment,
@@ -82,46 +77,16 @@ export class ActivityParseError extends Error {
 }
 
 export async function parseActivityLogs(
-  filePath = DATA_SOURCE.activityPath,
+  source: RawCsvRecord[] | string = activityLogs as RawCsvRecord[],
 ): Promise<ParseActivityLogsResult> {
-  const absolutePath = path.isAbsolute(filePath)
-    ? filePath
-    : path.join(process.cwd(), filePath);
-
-  let fileContents: string;
-
-  try {
-    fileContents = await readFile(absolutePath, "utf8");
-  } catch (error) {
-    throw new ActivityParseError(
-      "ACTIVITY_FILE_READ_FAILED",
-      `Unable to read activity log file at ${absolutePath}.`,
-      error,
-    );
-  }
-
-  return parseActivityLogsCsv(fileContents);
+  const records = Array.isArray(source) ? source : (activityLogs as RawCsvRecord[]);
+  validateStaticActivityRows(records);
+  return parseActivityLogsRecords(records);
 }
 
-export function parseActivityLogsCsv(csv: string): ParseActivityLogsResult {
-  const parsed = Papa.parse<RawCsvRecord>(csv, {
-    header: true,
-    skipEmptyLines: "greedy",
-    transformHeader: (header) => header.trim(),
-  });
-
-  if (parsed.errors.length > 0) {
-    throw new ActivityParseError(
-      "ACTIVITY_CSV_PARSE_FAILED",
-      "Activity CSV could not be parsed safely.",
-      parsed.errors,
-    );
-  }
-
-  validateHeaders(parsed.meta.fields ?? []);
-
+export function parseActivityLogsRecords(records: RawCsvRecord[]): ParseActivityLogsResult {
   const audit: AuditEntry[] = [];
-  const stats = createEmptyStats(parsed.data.length);
+  const stats = createEmptyStats(records.length);
   const auditCreatedAt = new Date().toISOString();
   let auditSequence = 0;
 
@@ -153,7 +118,7 @@ export function parseActivityLogsCsv(csv: string): ParseActivityLogsResult {
   const rows: ParsedActivityRow[] = [];
   const dropped: DroppedActivityRow[] = [];
 
-  parsed.data.forEach((record, index) => {
+  records.forEach((record, index) => {
     const rowNumber = index + 2;
     const result = normalizeActivityRecord(record, rowNumber, addAudit, stats);
 
@@ -538,13 +503,15 @@ function readCsvField(record: RawCsvRecord, field: (typeof REQUIRED_HEADERS)[num
   return record[field] ?? "";
 }
 
-function validateHeaders(headers: string[]) {
-  const missing = REQUIRED_HEADERS.filter((header) => !headers.includes(header));
+function validateStaticActivityRows(records: RawCsvRecord[]) {
+  const missingHeaders = REQUIRED_HEADERS.filter((header) =>
+    records.some((record) => !(header in record)),
+  );
 
-  if (missing.length > 0) {
+  if (missingHeaders.length > 0) {
     throw new ActivityParseError(
-      "ACTIVITY_CSV_HEADERS_INVALID",
-      `Activity CSV is missing required headers: ${missing.join(", ")}.`,
+      "ACTIVITY_RECORDS_INVALID",
+      `Activity records are missing required fields: ${missingHeaders.join(", ")}.`,
     );
   }
 }

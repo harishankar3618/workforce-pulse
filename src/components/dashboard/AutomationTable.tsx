@@ -28,7 +28,7 @@ export function AutomationTable({ tasks }: AutomationTableProps) {
   }, [sortAsc, tasks]);
 
   return (
-    <section className="rounded-2xl border border-border/70 bg-card p-3 shadow-dashboard-panel sm:p-4 md:p-5">
+    <section className="min-w-0 rounded-2xl border border-border/70 bg-card p-3 shadow-dashboard-panel sm:p-4 md:p-5">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <div className="space-y-1">
           <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground sm:text-xs">
@@ -49,7 +49,7 @@ export function AutomationTable({ tasks }: AutomationTableProps) {
       </div>
 
       <div className="mt-4 -mx-3 sm:mt-5 sm:-mx-4 md:mt-5">
-        <div className="overflow-x-auto rounded-[16px] border border-white/8">
+        <div className="max-w-full overflow-x-auto rounded-[16px] border border-white/8">
           <table className="w-full min-w-[720px] border-collapse text-xs sm:text-sm">
             <thead className="sticky top-0 bg-[#1C1C1F]">
               <tr className="border-b border-white/10 text-left text-[10px] uppercase tracking-[0.18em] text-muted-foreground">

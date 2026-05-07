@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import type { ComponentType, CSSProperties } from "react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 import type { AppMetrics, DeptMetrics, TaskMetrics } from "@/lib/types";
 import useFilterStore from "@/store/filterStore";
@@ -14,6 +14,7 @@ interface EChartsClickParams {
 interface EChartsProps {
   option: Record<string, unknown>;
   style?: CSSProperties;
+  onChartReady?: (instance: { resize: () => void }) => void;
   onEvents?: {
     click?: (params: EChartsClickParams) => void;
   };
@@ -33,6 +34,32 @@ export function TimeSinkChart({ tasks, apps, departments }: TimeSinkChartProps) 
   const [mode, setMode] = useState<ViewMode>("tasks");
   const setDepartment = useFilterStore((state) => state.setDepartment);
   const setTaskCategory = useFilterStore((state) => state.setTaskCategory);
+  const chartRef = useRef<{ resize: () => void } | null>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const element = containerRef.current;
+
+    if (!element || typeof ResizeObserver === "undefined") {
+      return;
+    }
+
+    let frame = 0;
+
+    const observer = new ResizeObserver(() => {
+      cancelAnimationFrame(frame);
+      frame = window.requestAnimationFrame(() => {
+        chartRef.current?.resize();
+      });
+    });
+
+    observer.observe(element);
+
+    return () => {
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+    };
+  }, []);
 
   const seriesData = useMemo(() => {
     if (mode === "apps") {
@@ -127,7 +154,7 @@ export function TimeSinkChart({ tasks, apps, departments }: TimeSinkChartProps) 
   };
 
   return (
-    <section className="rounded-2xl border border-border/70 bg-card p-3 shadow-dashboard-panel sm:p-4 md:p-5">
+    <section className="min-w-0 rounded-2xl border border-border/70 bg-card p-3 shadow-dashboard-panel sm:p-4 md:p-5">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <div className="space-y-1">
           <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground sm:text-xs">
@@ -154,8 +181,8 @@ export function TimeSinkChart({ tasks, apps, departments }: TimeSinkChartProps) 
         </div>
       </div>
 
-      <div className="mt-3 h-[280px] sm:mt-4 sm:h-[320px] md:h-[360px] lg:h-[420px]">
-        <ReactECharts option={option} style={{ height: "100%", width: "100%" }} onEvents={{ click: handleClick }} />
+      <div ref={containerRef} className="mt-3 min-w-0 overflow-hidden h-[280px] sm:mt-4 sm:h-[320px] md:h-[360px] lg:h-[420px]">
+        <ReactECharts onChartReady={(instance) => (chartRef.current = instance)} option={option} style={{ height: "100%", width: "100%" }} onEvents={{ click: handleClick }} />
       </div>
     </section>
   );

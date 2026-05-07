@@ -1,12 +1,9 @@
-import { readFile } from "node:fs/promises";
-import path from "node:path";
-
 import {
-  DATA_SOURCE,
   INDIA_TIMEZONE,
   MONTHS_PER_YEAR,
   WORKING_HOURS_PER_YEAR,
 } from "../constants.ts";
+import employeesData from "@/data/employees.json";
 import {
   canonicalizeDepartment,
   isMissingValue,
@@ -81,37 +78,9 @@ export class EmployeeParseError extends Error {
 }
 
 export async function parseEmployees(
-  filePath = DATA_SOURCE.employeesPath,
+  source: unknown = employeesData,
 ): Promise<ParseEmployeesResult> {
-  // Resolve path relative to project root (process.cwd() works on Vercel and local)
-  const absolutePath = path.isAbsolute(filePath)
-    ? filePath
-    : path.join(process.cwd(), filePath);
-
-  let fileContents: string;
-
-  try {
-    fileContents = await readFile(absolutePath, "utf8");
-  } catch (error) {
-    throw new EmployeeParseError(
-      "EMPLOYEE_FILE_READ_FAILED",
-      `Unable to read employees file at ${absolutePath}.`,
-      error,
-    );
-  }
-
-  let payload: unknown;
-
-  try {
-    payload = JSON.parse(fileContents);
-  } catch (error) {
-    throw new EmployeeParseError(
-      "EMPLOYEE_JSON_INVALID",
-      `Employees file contains invalid JSON at ${absolutePath}.`,
-      error,
-    );
-  }
-
+  const payload = typeof source === "string" ? employeesData : source;
   return parseEmployeesPayload(payload);
 }
 
