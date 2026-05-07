@@ -124,43 +124,65 @@ export function EmployeeTable({ employees }: EmployeeTableProps) {
               </tr>
             </thead>
             <tbody>
-              {visibleEmployees.map((employee) => {
+              {visibleEmployees.flatMap((employee) => {
                 const expanded = expandedEmployeeId === employee.employeeId;
+                const rows = [
+                  <tr
+                    key={employee.employeeId}
+                    onClick={() => setExpandedEmployeeId(expanded ? null : employee.employeeId)}
+                    className="cursor-pointer border-b border-white/6 transition hover:bg-white/4"
+                  >
+                    <td className="hidden px-4 py-4 text-foreground sm:table-cell">{employee.employeeId}</td>
+                    <td className="px-4 py-4 text-sm font-medium text-foreground md:text-base">
+                      <div>{employee.employeeId}</div>
+                      <div className="text-xs text-muted-foreground sm:hidden">{employee.department}</div>
+                    </td>
+                    <td className="hidden px-4 py-4 text-muted-foreground md:table-cell">{employee.department}</td>
+                    <td className="hidden px-4 py-4 text-muted-foreground sm:table-cell">{Math.round(employee.totalMinutes / 60)} hrs</td>
+                    <td className="px-4 py-4 text-muted-foreground">
+                      <span className="inline-block sm:hidden">{Math.round(employee.repetitiveShare * 100)}%</span>
+                      <span className="hidden sm:inline">{Math.round(employee.repetitiveShare * 100)}%</span>
+                    </td>
+                    <td className="hidden px-4 py-4 text-muted-foreground lg:table-cell">
+                      {employee.inrCostMonth === null ? "n/a" : `₹${employee.inrCostMonth.toLocaleString("en-IN")}`}
+                    </td>
+                    <td className="px-4 py-4 text-right text-xs font-medium text-foreground sm:text-left">
+                      {employee.topTasks[0]?.taskCategory ?? "None"}
+                      {expanded ? <ChevronUp className="ml-2 inline h-4 w-4" /> : <ChevronDown className="ml-2 inline h-4 w-4" />}
+                    </td>
+                  </tr>,
+                ];
 
-                return (
-                  <>
-                    <tr
-                      key={employee.employeeId}
-                      onClick={() => setExpandedEmployeeId(expanded ? null : employee.employeeId)}
-                      className="cursor-pointer border-b border-white/6 transition hover:bg-white/4"
-                    >
-                      <td className="px-4 py-4 text-foreground">{employee.employeeId}</td>
-                      <td className="px-4 py-4 text-muted-foreground">{employee.department}</td>
-                      <td className="px-4 py-4 text-muted-foreground">{Math.round(employee.totalMinutes / 60)} hrs</td>
-                      <td className="px-4 py-4 text-muted-foreground">{Math.round(employee.repetitiveShare * 100)}%</td>
-                      <td className="px-4 py-4 text-muted-foreground">
-                        {employee.inrCostMonth === null ? "n/a" : `₹${employee.inrCostMonth.toLocaleString("en-IN")}`}
-                      </td>
-                      <td className="px-4 py-4 font-medium text-foreground">{employee.topTasks[0]?.taskCategory ?? "None"}</td>
-                    </tr>
-                    {expanded ? (
-                      <tr key={`${employee.employeeId}-expanded`} className="border-b border-white/6 bg-white/3">
-                        <td colSpan={6} className="px-4 py-4">
-                          <div className="grid gap-3 md:grid-cols-3">
-                            {employee.topTasks.slice(0, 3).map((task) => (
-                              <div key={task.taskCategory} className="rounded-2xl border border-white/8 bg-[#242428] p-4">
-                                <p className="text-sm font-semibold text-foreground">{task.taskCategory}</p>
-                                <p className="mt-2 text-xs uppercase tracking-[0.16em] text-muted-foreground">
-                                  {Math.round(task.totalMinutes / 60)} hrs · {Math.round(task.repetitiveMinutes / Math.max(1, task.totalMinutes || 1) * 100)}% repetitive
-                                </p>
-                              </div>
-                            ))}
+                if (expanded) {
+                  rows.push(
+                    <tr key={`${employee.employeeId}-expanded`} className="border-b border-white/6 bg-white/3">
+                      <td colSpan={6} className="px-4 py-4">
+                        <div className="space-y-3 sm:grid sm:gap-3 sm:grid-cols-2 md:grid-cols-3">
+                          <div className="sm:hidden">
+                            <p className="text-xs uppercase tracking-[0.16em] text-muted-foreground">Total hours</p>
+                            <p className="mt-1 text-sm font-semibold text-foreground">{Math.round(employee.totalMinutes / 60)} hrs</p>
                           </div>
-                        </td>
-                      </tr>
-                    ) : null}
-                  </>
-                );
+                          <div className="lg:hidden">
+                            <p className="text-xs uppercase tracking-[0.16em] text-muted-foreground">Monthly INR</p>
+                            <p className="mt-1 text-sm font-semibold text-foreground">
+                              {employee.inrCostMonth === null ? "n/a" : `₹${employee.inrCostMonth.toLocaleString("en-IN")}`}
+                            </p>
+                          </div>
+                          {employee.topTasks.slice(0, 3).map((task) => (
+                            <div key={task.taskCategory} className="rounded-2xl border border-white/8 bg-[#242428] p-3 sm:p-4">
+                              <p className="text-sm font-semibold text-foreground">{task.taskCategory}</p>
+                              <p className="mt-2 text-xs uppercase tracking-[0.16em] text-muted-foreground">
+                                {Math.round(task.totalMinutes / 60)} hrs · {Math.round(task.repetitiveMinutes / Math.max(1, task.totalMinutes || 1) * 100)}% repetitive
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>,
+                  );
+                }
+
+                return rows;
               })}
             </tbody>
           </table>
