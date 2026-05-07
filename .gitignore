@@ -8,7 +8,6 @@ coverage
 .env*.local
 !.env.example
 
-*.log
 tsconfig.tsbuildinfo
 .DS_Store
 Thumbs.db
