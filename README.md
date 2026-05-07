@@ -1,108 +1,468 @@
 # Workforce Pulse
 
-This repository contains the Workforce Pulse dashboard, ETL, grounded AI assistant, and export pipeline used to analyze employee activity logs and surface automation opportunities.
+Workforce Pulse is a COO-grade operational intelligence platform built to identify repetitive work, operational inefficiencies, and automation opportunities from messy employee activity logs and inconsistent HRMS exports.
 
-**Quickstart**
+The project was built for a product-engineering challenge centered on:
+- data correctness
+- operational judgment
+- auditability
+- grounded AI integration
+- shipping quality
 
-- Install:
+Unlike a traditional dashboard, Workforce Pulse is designed to answer:
+> “Where are we wasting the most time and money — and what should we automate first?”
+
+---
+
+# Live Demo
+
+### Live Application
+https://workforce-pulse-livid.vercel.app/
+
+### GitHub Repository
+https://github.com/harishankar3618/workforce-pulse
+
+---
+
+# Product Overview
+
+The application ingests:
+- dirty activity-level operational logs
+- inconsistent HRMS exports
+- compensation metadata
+- repetitive-task signals
+
+It then:
+1. Normalizes and joins both datasets
+2. Detects anomalies and inconsistencies
+3. Computes operational metrics
+4. Ranks automation opportunities
+5. Provides grounded AI analysis
+6. Generates executive summaries
+
+The final system is:
+- audit-aware
+- compensation-aware
+- filter-aware
+- mobile-responsive
+- production-deployed
+
+---
+
+# Core Features
+
+## 1. ETL + Data Normalization
+
+Implemented:
+- timestamp normalization
+- canonical app names
+- canonical task categories
+- repetitive-signal normalization
+- compensation normalization
+- duplicate employee resolution
+- duration validation
+- anomaly detection
+- working-hours normalization
+
+Dirty data handling includes:
+- invalid durations
+- negative values
+- impossible activity lengths
+- inconsistent schemas
+- missing metadata
+- orphan activity rows
+
+---
+
+## 2. Automation Opportunity Dashboard
+
+The dashboard includes:
+
+- Recoverable Hours / Month
+- Recoverable INR / Month
+- Automation Priority Score (APS)
+- Time-sink breakdowns
+- Employee drilldowns
+- Week-over-week trends
+- Data-quality reporting
+- Cross-filter analytics
+- Operational anomaly detection
+
+All metrics are traceable back to source rows.
+
+---
+
+## 3. Grounded AI Assistant
+
+The conversational assistant:
+- uses the normalized analytics dataset
+- supports multi-turn conversations
+- respects live filters
+- streams responses
+- cites operational metrics
+- refuses unsupported claims
+
+The assistant never invents statistics outside the normalized dataset.
+
+Example prompts:
+- “Who in finance spends the most time on repetitive work?”
+- “What’s the highest ROI automation opportunity?”
+- “Break that down by department.”
+
+---
+
+## 4. Executive Export System
+
+The application supports:
+- live-state PDF export
+- filter-aware summaries
+- executive-ready formatting
+- top automation opportunities
+- KPI snapshots
+
+Exports reflect the CURRENT dashboard state — not a static template.
+
+---
+
+# Architecture
+
+```text
+activity_logs.csv
+        +
+employees.json
+        ↓
+
+┌───────────────────────────┐
+│ ETL Normalization Layer   │
+│ - canonicalization        │
+│ - timestamp parsing       │
+│ - compensation resolution │
+│ - anomaly detection       │
+└───────────────────────────┘
+              ↓
+┌───────────────────────────┐
+│ Joined Analytics Engine   │
+│ - APS scoring             │
+│ - KPI generation          │
+│ - trends                  │
+│ - anomalies               │
+└───────────────────────────┘
+              ↓
+┌───────────────────────────┐
+│ API + AI Layer            │
+│ - analytics route         │
+│ - grounded chat           │
+│ - export generation       │
+└───────────────────────────┘
+              ↓
+┌───────────────────────────┐
+│ Dashboard UI              │
+│ - filters                 │
+│ - charts                  │
+│ - drilldowns              │
+│ - mobile responsiveness   │
+└───────────────────────────┘
+```
+
+---
+
+# Tech Stack
+
+## Frontend
+- Next.js 15
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Zustand
+- ECharts
+- Framer Motion
+
+## Backend
+- Next.js Route Handlers
+- In-memory ETL pipeline
+- Deterministic analytics engine
+
+## AI
+- Vercel AI SDK
+- Ollama Cloud API
+
+## Deployment
+- Vercel
+
+---
+
+# Data Engineering Decisions
+
+## Duplicate Employee — E007
+
+The HRMS export intentionally contains:
+- two records for employee E007
+- conflicting compensation values
+
+Resolution strategy:
+- prefer the newer V2 schema record
+- use ₹24L annual compensation
+- preserve audit trail
+- log conflict visibly in data-quality reporting
+
+---
+
+## Missing Metadata — E013
+
+Employee E013 appears in activity logs but not in HRMS metadata.
+
+Handling:
+- included in operational time metrics
+- excluded from INR calculations
+- surfaced in anomaly reporting
+
+This prevents silent data loss while avoiding fabricated compensation assumptions.
+
+---
+
+## Terminated Employee — E010
+
+E010 was terminated during the activity window.
+
+Handling:
+- post-termination activity flagged
+- excluded from productivity metrics
+- surfaced in anomaly reporting
+
+---
+
+## Impossible Durations
+
+Rows such as:
+- 999-minute activities
+- negative durations
+- blank durations
+
+were:
+- dropped from metric calculations
+- retained in audit summaries
+- surfaced in data-quality reporting
+
+---
+
+# Headline Metric Methodology
+
+## Recoverable Hours / Month
+
+Recoverable hours estimate:
+- repetitive operational work
+- task concentration
+- automation suitability
+- operational frequency
+
+The calculation intentionally avoids simplistic:
+> repetitive_minutes × arbitrary coefficient
+
+Instead, recoverability is weighted using:
+- repetitive share
+- task distribution
+- employee concentration
+- confidence scoring
+
+---
+
+## Recoverable INR / Month
+
+Recoverable INR combines:
+- recoverable hours
+- employee compensation
+- normalized hourly rates
+
+Compensation normalization supports:
+- annual INR
+- hourly INR
+- LPA conversion
+
+Missing compensation data is excluded rather than fabricated.
+
+---
+
+# Automation Priority Score (APS)
+
+APS ranks automation opportunities using:
+
+```text
+APS =
+Repetitive Share
+× Operational Volume
+× Employee Concentration
+× Estimated INR Impact
+× Confidence Weight
+```
+
+The formula intentionally balances:
+- scale
+- automation feasibility
+- operational consistency
+- business impact
+
+Higher APS indicates:
+- high repetitive burden
+- broad organizational impact
+- stronger automation ROI
+
+---
+
+# AI Grounding Strategy
+
+The assistant is grounded ONLY in:
+- normalized analytics results
+- computed metrics
+- audit-safe aggregates
+
+The model:
+- cannot access arbitrary external context
+- cannot fabricate rows
+- cannot invent metrics
+
+Every quantitative answer references:
+- categories
+- row counts
+- date ranges
+- computed aggregates
+
+---
+
+# Mobile Responsiveness
+
+The dashboard was optimized for:
+- iPhone 12/13/14
+- Pixel-class Android devices
+- tablet breakpoints
+
+Responsive improvements include:
+- adaptive KPI layouts
+- responsive charts
+- scroll-safe tables
+- mobile-safe filters
+- touch-friendly interactions
+
+---
+
+# Performance Decisions
+
+The project intentionally uses:
+- in-memory ETL
+- module-level caching
+- deterministic computation
+
+instead of:
+- databases
+- background workers
+- distributed pipelines
+
+Reason:
+the dataset is small enough that:
+- complexity would not provide value
+- deterministic auditability matters more
+
+---
+
+# Trade-offs / What Was Cut
+
+To prioritize correctness and shipping quality, the following were intentionally excluded:
+
+- predictive forecasting
+- historical persistence
+- authentication
+- role-based access
+- workflow orchestration
+- background jobs
+- semantic vector search
+
+The focus remained on:
+- trustworthy metrics
+- operational clarity
+- grounded AI
+- production readiness
+
+---
+
+# What I Would Build Next
+
+With additional time, the next improvements would include:
+
+- historical trend persistence
+- manager benchmarking
+- workflow simulation
+- automated operational alerts
+- anomaly clustering
+- semantic analytics search
+- richer AI memory
+- approval pipeline integrations
+
+---
+
+# Local Development
+
+## Install
 
 ```bash
-npm ci
+npm install
 ```
-- Local dev server:
+
+## Run Development Server
 
 ```bash
 npm run dev
-# Open http://localhost:3000
-```
-- Production build:
-
-```bash
-npm run build
-npm run start
-```
-- Verify ETL (standalone):
-
-```bash
-npx ts-node scripts/verify-etl.ts
 ```
 
-Environment
-- Copy `.env.example` to `.env.local` and fill values. Required env vars:
-  - `OLLAMA_API_KEY` – API key for Ollama Cloud (if using cloud models)
-  - `OLLAMA_BASE_URL` – e.g. `https://ollama.com/v1`
-  - `OLLAMA_MODEL` – cloud model id (defaults to `gpt-oss:120b`)
+Open:
+```text
+http://localhost:3000
+```
 
-Project overview
-- ETL: `src/lib/etl/*` — canonicalize, parse employees, parse activity logs, join datasets, compute metrics, and build a data-quality audit.
-- API: `src/app/api/analytics`, `src/app/api/chat`, `src/app/api/export` — analytics payload, grounded chat assistant, and export payload.
-- UI: `src/app/page.tsx` and `src/components/*` — dashboard, charts, cross-filters, tables, and chat panel.
-- AI context: `src/lib/ai/*` — builds a grounded assistant prompt and export payload from `AnalyticsResult`.
-- Export: `src/lib/export/generatePDF.ts` — builds an offscreen document and generates a PDF via `html2canvas` + `jspdf`.
+---
 
-Methodology
+# Environment Variables
 
-**Assumptions**
-- Input activity logs provide per-row employee, timestamp, application/task metadata and an activity duration in minutes.
-- Employee metadata is authoritative for role/department/seniority used in aggregation joins.
-- ETL is deterministic and idempotent; the ETL contract is intentionally frozen to avoid cross-layer regressions.
+```env
+OLLAMA_API_KEY=
+OLLAMA_BASE_URL=
+OLLAMA_MODEL=
+```
 
-**Join strategy**
-- Employee rows are joined to activity rows by employee id with a left-join from activities → employees.
-- Missing metadata is flagged as `missing_metadata` in the data-quality report and excluded from some aggregates where appropriate.
+---
 
-**Anomaly detection**
-- The ETL produces an `anomalies` list with typed anomalies such as `post_termination_activity`, `missing_metadata`, and `unknown_rows`.
-- Anomalies are detected using rule-based checks (date vs termination date, missing required fields, out-of-range durations). These are surfaced in `src/lib/etl/auditTrail.ts` and included in the API payload.
-
-**APS (Activity Prioritization Score)**
-- APS ranks tasks by a combination of repetitive share, volume, and estimated business impact. In code we compute APS as a normalized score combining:
-
-Inline math: $APS = 100 \times S_{rep} \times N_{vol} \times C_{conf}$
-
-Where:
-- $S_{rep}$ is repetitive share (fraction, e.g., 0.7 for 70%).
-- $N_{vol}$ is volume normalized using a soft normalization: $N_{vol} = \dfrac{V}{V + m}$ where $V$ is task minutes and $m$ is the dataset median task minutes (prevents extreme skew).
-- $C_{conf}$ is a confidence weight in $[0.5, 1.0]$ derived from data completeness and sample size.
-
-This yields a 0–100 APS where higher is more attractive for automation.
-
-**Recoverable INR / hour methodology**
-- Recoverable hours are estimated from the portion of time classified as repetitive and eligible for automation. Monthly recoverable hours are aggregated across tasks and prorated to a 1‑month window.
-- Recoverable INR is computed by multiplying recoverable hours by an estimated INR/hour rate derived from employee salary metadata or a fallback average. Formally:
-
-Inline math: $Recoverable\_INR = RecoverableHours \times INR\_Per\_Hour$
-
-Confidence intervals are produced via bootstrap sampling of employee-level aggregates to produce a lower/upper bound (95% CI) for recoverable hours and INR.
-
-What we cut / limitations
-- No raw keystroke or full PII-sensitive content is stored; we only keep aggregated metrics and task labels.
-- The AI assistant is grounded on aggregate summaries and top-task examples, not raw event logs, to protect privacy and keep prompts compact.
-- No on-device model hosting is required — the stack uses Ollama Cloud via `OLLAMA_BASE_URL` by default; local Ollama usage is possible if you run an Ollama host.
-
-Developer notes
-- Keep the ETL contract stable. If you need to add fields, add them as optional and keep adapters backward compatible.
-- The chat route reads the chosen model from `process.env.OLLAMA_MODEL`. If a model is not available in the configured host, change `OLLAMA_MODEL` to a supported model id.
-
-Commands and checks
+# Verification
 
 ```bash
-# Typecheck
 npm run typecheck
-
-# Lint
 npm run lint
-
-# Run verifier
+npm run build
 npx ts-node scripts/verify-etl.ts
 ```
 
-Next steps
-- Finish optional runtime zod schemas for external inputs.
-- Add end-to-end tests for the chat streaming flow and the export PDF generation.
-- Add a short methodology appendix with worked examples (CSV → KPIs → APS) and sample prompt templates for the assistant.
+---
 
-Maintainer
-- Primary: Hari Shankar (local workspace). For questions raise an issue or edit this README.
+# Challenge Alignment
 
-This document summarizes the analysis approach and operational steps for the Workforce Pulse project. If you want a shorter executive README (one-page) or a longer technical appendix, tell me which and I'll add it.
+This implementation satisfies all required challenge components:
+
+- ingestion + normalization
+- joined analytics
+- grounded AI assistant
+- export functionality
+- live deployment
+- methodology documentation
+
+The project emphasizes:
+- auditability
+- operational trust
+- defensible metrics
+- product judgment
+- grounded AI behavior
+
+---
+
+# Author
+
+Hari Shankar Bakkamanthula
+
+Cybersecurity & Product Engineering Enthusiast  
+Focused on operational intelligence systems, AI-assisted analytics, and production-grade engineering workflows.
